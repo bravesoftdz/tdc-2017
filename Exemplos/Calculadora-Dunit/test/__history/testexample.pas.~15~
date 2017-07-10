@@ -1,0 +1,45 @@
+unit testexample;
+
+interface
+
+uses
+  TestFramework, classes, SysUtils, Example1;
+
+type
+  TExampleTest = class(TTestCase)
+  strict private
+    FormExample1: TFormExample1;
+  public
+    procedure SetUp; override;
+    procedure TearDown; override;
+    R: Real;
+  published
+    procedure Test1;
+  end;
+
+implementation
+
+{ TestExample }
+
+procedure TExampleTest.SetUp;
+begin
+  //TExampleTest := TExampleTest.Create(nil);
+end;
+
+procedure TExampleTest.TearDown;
+begin
+  //TExampleTest.Free;
+  //TExampleTest := nil;
+end;
+
+procedure TExampleTest.Test1;
+begin
+  R := TFormExample1.Soma(5,5);
+  CheckEquals(10, R);
+
+end;
+
+initialization
+  RegisterTest(TExampleTest.Suite);
+end.
+

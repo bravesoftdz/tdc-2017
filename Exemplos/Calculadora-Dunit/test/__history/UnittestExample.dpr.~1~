@@ -1,0 +1,16 @@
+program UnittestExample;
+
+{$IFDEF CONSOLE_TESTRUNNER}
+{$APPTYPE CONSOLE}
+{$ENDIF}
+
+uses
+  DUnitTestRunner,
+  testexample in 'testexample.pas';
+
+{$R *.RES}
+
+begin
+  DUnitTestRunner.RunRegisteredTests;
+end.
+
