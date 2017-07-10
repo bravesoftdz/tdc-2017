@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\Ferramentas SVN\Intesig_TestCase\Exemplos\DUnitX\FuncoesIntesig\Debug\Intesig_TestCase.exe" total="8" errors="0" failures="1" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-06-14" time="0.001">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="Intesig_TestCase.exe" executed="true" result="Failure" success="False" time="0.001" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="IntesigTest" executed="true" result="Failure" success="False" time="0.001" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="TIntesigSoNumeros" executed="True" result="Failure" success="False" time="0.001" >
+                <results>
+                  <test-case name="SoNumerosValido.Teste1" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SoNumerosValido.Teste2" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SoNumerosValido.Teste3" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SoNumerosValido.Teste4" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SoNumerosValido.Teste5" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SoNumerosInvalido.Teste6" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="SoNumerosInvalido.Teste7" executed="True" result="Failure" success="False" time="0.000" asserts="0" >
+                    <failure>
+                      <message>
+                        <![CDATA[ [] is equal to []  ]]>
+                      </message>
+                      <stack-trace>
+                        <![CDATA[  ]]>
+                      </stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="SoNumerosInvalido.Teste8" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>

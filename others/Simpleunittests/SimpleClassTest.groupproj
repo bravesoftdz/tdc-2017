@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{13C33E2F-E4AC-4B9F-AEA1-6841F56D84C6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DUnit\TestBank.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DUnitX\TestBankX.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TestBank">
+        <MSBuild Projects="DUnit\TestBank.dproj"/>
+    </Target>
+    <Target Name="TestBank:Clean">
+        <MSBuild Projects="DUnit\TestBank.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestBank:Make">
+        <MSBuild Projects="DUnit\TestBank.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestBankX">
+        <MSBuild Projects="DUnitX\TestBankX.dproj"/>
+    </Target>
+    <Target Name="TestBankX:Clean">
+        <MSBuild Projects="DUnitX\TestBankX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestBankX:Make">
+        <MSBuild Projects="DUnitX\TestBankX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TestBank;TestBankX"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TestBank:Clean;TestBankX:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TestBank:Make;TestBankX:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

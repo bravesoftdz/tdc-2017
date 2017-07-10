@@ -1,0 +1,1169 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{A4EA7B23-9A79-433E-82F2-63CD4A921CE8}</ProjectGuid>
+			<ProjectVersion>13.4</ProjectVersion>
+			<FrameworkType>VCL</FrameworkType>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+			<TargetedPlatforms>1</TargetedPlatforms>
+			<AppType>Console</AppType>
+			<MainSource>IntesigVENTests.dpr</MainSource>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+			<Base_Win64>true</Base_Win64>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+			<Base_Win32>true</Base_Win32>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+			<Cfg_1_Win32>true</Cfg_1_Win32>
+			<CfgParent>Cfg_1</CfgParent>
+			<Cfg_1>true</Cfg_1>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+			<Cfg_2_Win32>true</Cfg_2_Win32>
+			<CfgParent>Cfg_2</CfgParent>
+			<Cfg_2>true</Cfg_2>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+			<BRCC_IncludePath>$(BDS)\Source\DUnit\src;$(BDS)\Source\DUnit\src;$(BDS)\Source\DUnit\src;$(BRCC_IncludePath)</BRCC_IncludePath>
+			<Manifest_File>None</Manifest_File>
+			<VerInfo_Locale>1046</VerInfo_Locale>
+			<DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;c:\SIS\Uso Geral;c:\sis\SisIAP;c:\SIS\SisAST;c:\SIS\SisEST;c:\SIS\SisBAN;c:\SIS\SisREC;c:\SIS\SisPAG;c:\SIS\SisICH;c:\SIS\SisIFP;c:\SIS\SisCXA;c:\SIS\SisPAR;c:\SIS\SisCVI;c:\SIS\SisICT;c:\SIS\SisIEF;c:\SIS\SisIAG;c:\SIS\SisICC;c:\SIS\SisIOR;c:\SIS\SisIPP;c:\SIS\SisIPA;c:\SIS\SisIAP;c:\SIS\SisICP;c:\SIS\SisIRH;c:\Componentes\Delphi XE 2\Tef;C:\SIS\Uso Geral\Tradução;C:\SIS\SisPTO;C:\SIS\SISVEN;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
+			<DCC_UsePackage>AnyDAC_PhysADS_D16;AnyDAC_Comp_D16;DBXInterBaseDriver;DataSnapServer;DataSnapCommon;DbxCommonDriver;dbxcds;AnyDAC_PhysTDBX_D16;CustomIPTransport;dsnap;AnyDAC_PhysSQLITE_D16;IndyCore;CloudService;FmxTeeUI;IPIndyImpl;bindcompfmx;dbrtl;bindcomp;inetdb;xmlrtl;ibxpress;soaprtl;bindengine;FMXTee;DBXInformixDriver;DBXFirebirdDriver;inet;AnyDAC_PhysMSAcc_D16;DBXSybaseASADriver;AnyDAC_GUIxForms_D16;dbexpress;fmx;AnyDAC_PhysPg_D16;IndySystem;AnyDAC_Phys_D16;AnyDAC_PhysDb2_D16;DataSnapClient;AnyDAC_PhysMSSQL_D16;DataSnapProviderClient;DBXOracleDriver;AnyDAC_PhysOracle_D16;fmxase;AnyDAC_PhysMySQL_D16;inetdbxpress;AnyDAC_PhysODBC_D16;rtl;DbxClientDriver;AnyDAC_PhysASA_D16;IndyProtocols;DBXMySQLDriver;AnyDAC_ComI_D16;fmxobj;AnyDAC_PhysIB_D16;fmxdae;DataSnapIndy10ServerTransport;$(DCC_UsePackage)</DCC_UsePackage>
+			<DCC_Define>_CONSOLE_TESTRUNNER;$(DCC_Define)</DCC_Define>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+			<DCC_DcuOutput>C:\Intesig\DCU</DCC_DcuOutput>
+			<DCC_ExeOutput>C:\Intesig</DCC_ExeOutput>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win64)'!=''">
+			<DCC_UsePackage>dxTileControlRS16;cxLibraryRS16;dxPsPrVwAdvRS16;dxPSCoreRS16;cxPivotGridOLAPRS16;dxPScxGridLnkRS16;dxPScxTLLnkRS16;cxPageControlRS16;vclimg;dxComnRS16;vcldb;dxADOServerModeRS16;dxBarExtDBItemsRS16;UIBD16Win32R;cxDataRS16;cxBarEditItemRS16;dxDockingRS16;cxPageControldxBarPopupMenuRS16;dxPSDBTeeChartRS16;dxPSLnksRS16;dxBarExtItemsRS16;dxPSTeeChartRS16;dxPSdxLCLnkRS16;cxVerticalGridRS16;dxorgcRS16;dxPScxExtCommonRS16;dxNavBarRS16;DBXOdbcDriver;dxdbtrRS16;dxPScxSSLnkRS16;dxSkinscxPCPainterRS16;dxPSdxDBTVLnkRS16;vclactnband;dxPScxSchedulerLnkRS16;dxServerModeRS16;bindcompvcl;vclie;dsnapcon;dcldxSkinsCoreRS16;vclx;dxFlowChartRS16;dxGDIPlusRS16;dxdborRS16;dxPScxVGridLnkRS16;dxLayoutControlRS16;dxPScxPivotGridLnkRS16;dxCoreRS16;cxExportRS16;dxBarRS16;dxSkinsdxNavBarPainterRS16;cxSpreadSheetRS16;cxTreeListdxBarPopupMenuRS16;TeeDB;dxDBXServerModeRS16;vclib;dxRibbonRS16;DBXSybaseASEDriver;cxTreeListRS16;dxSkinsdxRibbonPainterRS16;vcldsnap;DBXDb2Driver;vclribbon;dxSkinscxSchedulerPainterRS16;vcl;DBXMSSQLDriver;cxSchedulerGridRS16;webdsnap;dxtrmdRS16;dxSkinsdxDLPainterRS16;adortl;dxPSdxDBOCLnkRS16;dxSkinsdxBarPainterRS16;Tee;dxSkinsCoreRS16;cxPivotGridChartRS16;dxPScxCommonRS16;dxmdsRS16;dxSpellCheckerRS16;dxPSPrVwRibbonRS16;cxGridRS16;cxEditorsRS16;TeeUI;cxPivotGridRS16;cxSchedulerRS16;vcltouch;QR5RunNBDEDXE2;websnap;VclSmp;dxTabbedMDIRS16;DataSnapConnectors;dxPSdxOCLnkRS16;dxPSdxFCLnkRS16;dxThemeRS16;dxPScxPCProdRS16;dxBarDBNavRS16;$(DCC_UsePackage)</DCC_UsePackage>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win32)'!=''">
+			<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<DCC_UsePackage>dxTileControlRS16;JvGlobus;fsADO16;JvMM;cxLibraryRS16;JvManagedThreads;dclRBADO1416;ACBr_BoletoFR;JvCrypt;ACBr_NFeDanfeFR;dxPsPrVwAdvRS16;frxBDE16;dxPSCoreRS16;cxPivotGridOLAPRS16;dxPScxGridLnkRS16;dxPScxTLLnkRS16;rbRCL1416;JvNet;cxPageControlRS16;rbRAP1416;JvDotNetCtrls;ACBr_synapse;fsIBX16;vclimg;fmi;RtmRxCtl160;dxComnRS16;JvXPCtrls;ACBr_Comum;vcldb;dxADOServerModeRS16;dxBarExtDBItemsRS16;rbUSER1416;CnPack_D16;dclRBBDE1416;rbCIDE1416;rbDIDE1416;UIBD16Win32R;cxDataRS16;cxBarEditItemRS16;ACBr_NFeDanfeRVCodeBase;dxDockingRS16;cxPageControldxBarPopupMenuRS16;dxPSDBTeeChartRS16;tmsexdxe2;JvDB;JvRuntimeDesign;ACBr_CTeDacteFR;dxPSLnksRS16;dxBarExtItemsRS16;JclDeveloperTools;dxPSTeeChartRS16;dxPSdxLCLnkRS16;cxVerticalGridRS16;dxorgcRS16;dxPScxExtCommonRS16;vcldbx;dxNavBarRS16;JvPluginSystem;ACBr_NFe;DBXOdbcDriver;dxdbtrRS16;JvCmp;madDisAsm_;JvTimeFramework;dxPScxSSLnkRS16;fsBDE16;frxDB16;intrawebdb_120_160;dxSkinscxPCPainterRS16;dxPSdxDBTVLnkRS16;vclactnband;dxPScxSchedulerLnkRS16;dxServerModeRS16;fs16;bindcompvcl;Jcl;vclie;rbIDE1416;madExcept_;IntesigXE2;dsnapcon;dcldxSkinsCoreRS16;JvPascalInterpreter;vclx;dxFlowChartRS16;frxIBX16;dxGDIPlusRS16;JvBDE;dxdborRS16;dxPScxVGridLnkRS16;dxLayoutControlRS16;dxPScxPivotGridLnkRS16;dxCoreRS16;cxExportRS16;RtmRxBDE160;dxBarRS16;dxSkinsdxNavBarPainterRS16;cxSpreadSheetRS16;cxTreeListdxBarPopupMenuRS16;TeeDB;dxDBXServerModeRS16;JvDlgs;frxTee16;Rave100VCL;vclib;inetdbbde;ACBr_Diversos;dxRibbonRS16;DBXSybaseASEDriver;cxTreeListRS16;ACBr_NFSeDanfseFR;dxSkinsdxRibbonPainterRS16;vcldsnap;DBXDb2Driver;Intraweb_120_160;frce;JvCore;vclribbon;frxADO16;frxe16;ACBr_Serial;dxSkinscxSchedulerPainterRS16;vcl;rbTCUI1416;ACBr_DFeComum;DBXMSSQLDriver;CodeSiteExpressPkg;RtmRxDB160;FixInsight_XE2;ACBr_Boleto;dclRBE1416;fsTee16;JvAppFrm;cxSchedulerGridRS16;tmsdxe2;webdsnap;dxtrmdRS16;dxSkinsdxDLPainterRS16;rbRIDE1416;rbDAD1416;ACBr_NFSe;JvDocking;adortl;JvWizards;ACBr_TCP;rbUSERDesign1416;madBasic_;JvHMI;frxDBX16;JvBands;frx16;dxPSdxDBOCLnkRS16;ACBr_NFeDanfeRV;dxSkinsdxBarPainterRS16;Tee;rbDBDE1416;ACBr_CTe;dxSkinsCoreRS16;JvSystem;svnui;rbTC1416;cxPivotGridChartRS16;dxPScxCommonRS16;dxmdsRS16;dxSpellCheckerRS16;dxPSPrVwRibbonRS16;cxGridRS16;JvControls;ACBr_NFeDanfeRL;cxEditorsRS16;TeeUI;cxPivotGridRS16;JvJans;JvPrintPreview;JvPageComps;JvStdCtrls;JvCustom;rbADO1416;cxSchedulerRS16;ACBr_OpenSSL;tmsxlsdxe2;vcltouch;rbBDE1416;QR5RunNBDEDXE2;websnap;VclSmp;dxTabbedMDIRS16;rbDB1416;fsDB16;DataSnapConnectors;dxPSdxOCLnkRS16;dxPSdxFCLnkRS16;dxThemeRS16;dxPScxPCProdRS16;JclVcl;tmswizdxe2;svn;bdertl;dxBarDBNavRS16;$(DCC_UsePackage)</DCC_UsePackage>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<DCC_RemoteDebug>true</DCC_RemoteDebug>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+			<Debugger_RunParams>INTESIG MASTER 123 001</Debugger_RunParams>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<DCC_RemoteDebug>false</DCC_RemoteDebug>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+			<VerInfo_Locale>1033</VerInfo_Locale>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="$(MainSource)">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\..\Uso Geral\PAIMDICHILD.pas"/>
+			<DCCReference Include="..\..\Uso Geral\PAIDETODOS.pas"/>
+			<DCCReference Include="..\..\Uso Geral\PAIPRINCIPAL.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UNI800M.pas">
+				<Form>FUNI800M</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\Uso Geral\Tradução\TraducaoXE2.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaEcfBematech.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaEcfCorisco.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaEcfDaruma.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaEcfSweda.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaPESQMODAL.pas">
+				<Form>FUSAPESQMODAL</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Uso Geral\AcsSistemas.pas"/>
+			<DCCReference Include="..\..\Uso Geral\AcsGERAL.pas"/>
+			<DCCReference Include="..\..\Uso Geral\FramePeriodo.pas">
+				<Form>FramePeriodo</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\Uso Geral\USANF.pas">
+				<Form>FUSANF</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\Uso Geral\UsaECF.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaUrano.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaECFEpson.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaECFElgin.pas"/>
+			<DCCReference Include="..\..\Uso Geral\ECF.pas"/>
+			<DCCReference Include="..\..\Uso Geral\FrameCliente.pas">
+				<Form>FrameCliente</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\Uso Geral\UsaPesquisaGeralCliFor.pas">
+				<Form>FUsaPesquisaGeralCliFor</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Uso Geral\UsaPesqModal_ICCIAG.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaPesqModal_PesqGeral.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaPesqModal_RecPag.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaPesqModal_EstVen.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UsaPesqModal_UniGer.pas"/>
+			<DCCReference Include="..\VEN711E.pas">
+				<Form>FVEN711E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN711X.pas">
+				<Form>FVEN711X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN711Y.pas">
+				<Form>FVEN711Y</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN711Z.pas">
+				<Form>FVEN711Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN712E.pas">
+				<Form>FVEN712E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN755E.pas">
+				<Form>FVEN755E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN900A.pas">
+				<Form>FVEN900A</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN205P.pas">
+				<Form>FVEN205P</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN400R.pas">
+				<Form>FVEN400R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601E.pas">
+				<Form>FVEN601E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN402X.pas">
+				<Form>FVEN402X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN600E.pas">
+				<Form>FVEN600E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN460R.pas">
+				<Form>FVEN460R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN459R.pas">
+				<Form>FVEN459R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN006C.pas">
+				<Form>FVEN006C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN629E.pas">
+				<Form>FVEN629E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN602W.pas">
+				<Form>FVEN602W</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN462R.pas">
+				<Form>FVEN462R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN464R.pas">
+				<Form>FVEN464R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN463R.pas">
+				<Form>FVEN463R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN000C.pas">
+				<Form>FVEN000C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN465R.pas">
+				<Form>FVEN465R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN403R.pas">
+				<Form>FVEN403R</Form>
+			</DCCReference>
+			<DCCReference Include="..\ven402z.pas">
+				<Form>FVEN402Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN415R.pas">
+				<Form>FVEN415R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601D.pas">
+				<Form>FVEN601D</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN419R.pas">
+				<Form>FVEN419R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN414R.pas">
+				<Form>FVEN414R</Form>
+			</DCCReference>
+			<DCCReference Include="..\UsaNFServico.pas"/>
+			<DCCReference Include="..\VEN420R.pas">
+				<Form>FVEN420R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN467R.pas">
+				<Form>FVEN467R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN468R.pas">
+				<Form>FVEN468R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN438R.pas">
+				<Form>FVEN438R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN026C.pas">
+				<Form>FVEN026C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN466R.pas">
+				<Form>FVEN466R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN413R.pas">
+				<Form>FVEN413R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN405R.pas">
+				<Form>FVEN405R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN6014.pas">
+				<Form>FVEN6014</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN470R.pas">
+				<Form>FVEN470R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN469R.pas">
+				<Form>FVEN469R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN616E.pas">
+				<Form>FVEN616E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN461R.pas">
+				<Form>FVEN461R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN606E.pas">
+				<Form>FVEN606E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN204W.pas">
+				<Form>FVEN204W</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN471R.pas">
+				<Form>FVEN471R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN623E.pas">
+				<Form>FVEN623E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN6012.pas">
+				<Form>FVEN6012</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN472R.pas">
+				<Form>FVEN472R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN632E.pas">
+				<Form>FVEN632E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN473R.pas">
+				<Form>FVEN473R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN474R.pas">
+				<Form>FVEN474R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN475R.pas">
+				<Form>FVEN475R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN433R.pas">
+				<Form>FVEN433R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN206P.pas">
+				<Form>FVEN206P</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN412R.pas">
+				<Form>FVEN412R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN417R.pas">
+				<Form>FVEN417R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN418r.pas">
+				<Form>FVEN418R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN489R.pas">
+				<Form>FVEN489R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN445R.pas">
+				<Form>FVEN445R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601K.pas">
+				<Form>FVEN601K</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601Z.pas">
+				<Form>FVEN601Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN499R.pas">
+				<Form>FVEN499R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN456R.pas">
+				<Form>FVEN456R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN458R.pas">
+				<Form>FVEN458R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN409R.pas">
+				<Form>FVEN409R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN411R.pas">
+				<Form>FVEN411R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN435R.pas">
+				<Form>FVEN435R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN204P.pas">
+				<Form>FVEN204P</Form>
+			</DCCReference>
+			<DCCReference Include="..\ven451R.pas">
+				<Form>FVEN451R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN000F.pas"/>
+			<DCCReference Include="..\VEN442R.pas">
+				<Form>FVEN442R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601G.pas">
+				<Form>FVEN601G</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601V.pas">
+				<Form>FVEN601V</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN602E.pas">
+				<Form>FVEN602E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601L.pas">
+				<Form>FVEN601L</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601LA.pas">
+				<Form>FVEN601LA</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN204Z.pas">
+				<Form>FVEN204Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN027C.pas">
+				<Form>FVEN027C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN431R.pas">
+				<Form>FVEN431R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN487R.pas">
+				<Form>FVEN487R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN410R.pas">
+				<Form>FVEN410R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN444R.pas">
+				<Form>FVEN444R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN014C.pas">
+				<Form>FVEN014C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN633E.pas">
+				<Form>FVEN633E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN484R.pas">
+				<Form>FVEN484R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN202P.pas">
+				<Form>FVEN202P</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN406R.pas">
+				<Form>FVEN406R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN628E.pas">
+				<Form>FVEN628E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN477R.pas">
+				<Form>FVEN477R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN432R.pas">
+				<Form>FVEN432R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN476R.pas">
+				<Form>FVEN476R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN428R.pas">
+				<Form>FVEN428R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN611E.pas">
+				<Form>FVEN611E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN611Z.pas">
+				<Form>FVEN611Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN611Y.pas">
+				<Form>FVEN611Y</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN001C.pas">
+				<Form>FVEN001C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN605E.pas">
+				<Form>FVEN605E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN455R.pas">
+				<Form>FVEN455R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601I.pas">
+				<Form>FVEN601I</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601O.pas">
+				<Form>FVEN601O</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN448R.pas">
+				<Form>FVEN448R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN478R.pas">
+				<Form>FVEN478R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN634E.pas">
+				<Form>FVEN634E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN624E.pas">
+				<Form>FVEN624E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN635E.pas">
+				<Form>FVEN635E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN452R.pas">
+				<Form>FVEN452R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN642E.pas">
+				<Form>FVEN642E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN479R.pas">
+				<Form>FVEN479R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN637E.pas">
+				<Form>FVEN637E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601U.pas">
+				<Form>FVEN601U</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN429R.pas">
+				<Form>FVEN429R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN607E.pas">
+				<Form>FVEN607E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN622E.pas">
+				<Form>FVEN622E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN625E.pas">
+				<Form>FVEN625E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN480R.pas">
+				<Form>FVEN480R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN638E.pas">
+				<Form>FVEN638E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN479T.pas">
+				<Form>FVEN479T</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN404R.pas">
+				<Form>FVEN404R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN604E.pas">
+				<Form>FVEN604E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN612E.pas">
+				<Form>FVEN612E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN028C.pas">
+				<Form>FVEN028C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN437R.pas">
+				<Form>FVEN437R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN482R.pas">
+				<Form>FVEN482R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN483R.pas">
+				<Form>FVEN483R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN639E.pas">
+				<Form>FVEN639E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN640E.pas">
+				<Form>FVEN640E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN004C.pas">
+				<Form>FVEN004C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN416R.pas">
+				<Form>FVEN416R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN449R.pas">
+				<Form>FVEN449R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN430R.pas">
+				<Form>FVEN430R</Form>
+			</DCCReference>
+			<DCCReference Include="..\ven443r.pas">
+				<Form>FVEN443R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN207P.pas">
+				<Form>FVEN207P</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN609E.pas">
+				<Form>FVEN609E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN643E.pas">
+				<Form>FVEN643E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN605P.pas">
+				<Form>FVEN605P</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN201P.pas">
+				<Form>FVEN201P</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN481R.pas">
+				<Form>FVEN481R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN641E.pas">
+				<Form>FVEN641E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601AE.pas">
+				<Form>FVEN601AE</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN479Z.pas">
+				<Form>FVEN479Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN486R.pas">
+				<Form>FVEN486R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN485R.pas">
+				<Form>FVEN485R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN501R.pas">
+				<Form>FVEN501R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN434R.pas">
+				<Form>FVEN434R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN500R.pas">
+				<Form>FVEN500R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN454R.pas">
+				<Form>FVEN454R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601X.pas">
+				<Form>FVEN601X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN502R.pas">
+				<Form>FVEN502R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN502X.pas">
+				<Form>FVEN502X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN446R.pas">
+				<Form>FVEN446R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN645E.pas">
+				<Form>FVEN645E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN457R.pas">
+				<Form>FVEN457R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN488R.pas">
+				<Form>FVEN488R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN616W.pas">
+				<Form>FVEN616W</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601AB.pas">
+				<Form>FVEN601AB</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601AG.pas">
+				<Form>FVEN601AG</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN503R.pas">
+				<Form>FVEN503R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN407R.pas">
+				<Form>FVEN407R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601AD.pas">
+				<Form>FVEN601AD</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601T.pas">
+				<Form>FVEN601T</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN409Y.pas">
+				<Form>FVEN409Y</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN618E.pas">
+				<Form>FVEN618E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN029C.pas">
+				<Form>FVEN029C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN504R.pas">
+				<Form>FVEN504R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN451Y.pas">
+				<Form>FVEN451Y</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN402R.pas">
+				<Form>FVEN402R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN447R.pas">
+				<Form>FVEN447R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN030C.pas">
+				<Form>FVEN030C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN654E.pas">
+				<Form>FVEN654E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN647E.pas">
+				<Form>FVEN647E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN402R1.pas"/>
+			<DCCReference Include="..\VEN402R2.pas"/>
+			<DCCReference Include="..\VEN402RX.pas"/>
+			<DCCReference Include="..\VEN505R.pas">
+				<Form>FVEN505R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN616Y.pas">
+				<Form>FVEN616Y</Form>
+			</DCCReference>
+			<DCCReference Include="..\ven602x.pas">
+				<Form>FVEN602X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN646E.pas">
+				<Form>FVEN646E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN506R.pas">
+				<Form>FVEN506R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN616Z.pas">
+				<Form>FVEN616Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN616X.pas">
+				<Form>FVEN616X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601AH.pas">
+				<Form>FVEN601AH</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601AI.pas">
+				<Form>FVEN601AI</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN644E.pas">
+				<Form>FVEN644E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601W.pas">
+				<Form>FVEN601W</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630V.pas">
+				<Form>FVEN630V</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630T.pas">
+				<Form>FVEN630T</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630S.pas">
+				<Form>FVEN630S</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630P.pas">
+				<Form>FVEN630P</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630M.pas">
+				<Form>FVEN630M</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630K.pas">
+				<Form>FVEN630K</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630Z.pas">
+				<Form>FVEN630Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630I.pas">
+				<Form>FVEN630I</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630H.pas">
+				<Form>FVEN630H</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630G.pas">
+				<Form>FVEN630G</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630F.pas">
+				<Form>FVEN630F</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630D.pas">
+				<Form>FVEN630D</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630C.pas">
+				<Form>FVEN630C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630B.pas">
+				<Form>FVEN630B</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630A.pas">
+				<Form>FVEN630A</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630X.pas">
+				<Form>FVEN630X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN630E.PAS">
+				<Form>FVEN630E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN000T.pas"/>
+			<DCCReference Include="..\VEN508R.pas">
+				<Form>FVEN508R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN507R.pas">
+				<Form>FVEN507R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN509R.pas">
+				<Form>FVEN509R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN648E.pas">
+				<Form>FVEN648E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN510R.pas">
+				<Form>FVEN510R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN651E.pas">
+				<Form>FVEN651E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN649X.pas">
+				<Form>FVEN649X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN650E.pas">
+				<Form>FVEN650E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN511R.pas">
+				<Form>FVEN511R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN023C.pas">
+				<Form>FVEN023C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN600A.pas">
+				<Form>FVEN600A</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN512R.pas">
+				<Form>FVEN512R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN649E.pas">
+				<Form>FVEN649E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN651X.pas">
+				<Form>FVEN651X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN490R.pas">
+				<Form>FVEN490R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN491R.pas">
+				<Form>FVEN491R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN513R.pas">
+				<Form>FVEN513R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN492R.pas">
+				<Form>FVEN492R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN652E.pas">
+				<Form>FVEN652E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN6013.pas">
+				<Form>FVEN6013</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN653E.pas">
+				<Form>FVEN653E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN514R.PAS">
+				<Form>FVEN514R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN636E.pas">
+				<Form>FVEN636E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN422R.pas">
+				<Form>FVEN422R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN208P.pas">
+				<Form>FVEN208P</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN208Z.pas">
+				<Form>FVEN208Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN208X.pas">
+				<Form>FVEN208X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN204X.pas">
+				<Form>FVEN204X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN610E.pas">
+				<Form>FVEN610E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN610Y.pas">
+				<Form>FVEN610Y</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN423R.pas">
+				<Form>FVEN423R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN031C.pas">
+				<Form>FVEN031C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601VA.pas">
+				<Form>FVEN601VA</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN033C.pas">
+				<Form>FVEN033C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN655E.pas">
+				<Form>FVEN655E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN032C.pas">
+				<Form>FVEN032C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN002C.pas">
+				<Form>FVEN002C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN002Z.pas">
+				<Form>FVEN002Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN002X.pas">
+				<Form>FVEN002X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN516R.pas">
+				<Form>FVEN516R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN007C.pas">
+				<Form>FVEN007C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN6012Z.pas">
+				<Form>FVEN6012Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN656E.pas">
+				<Form>FVEN656E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN600B.pas">
+				<Form>FVEN600B</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN651Z.pas">
+				<Form>FVEN651Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN517R.pas">
+				<Form>FVEN517R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN204T.pas">
+				<Form>FVEN204T</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN518R.pas">
+				<Form>FVEN518R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN519R.pas">
+				<Form>FVEN519R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN520R.pas">
+				<Form>FVEN520R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN657E.pas">
+				<Form>FVEN657E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN474Z.pas">
+				<Form>FVEN474Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN027X.pas">
+				<Form>FVEN027X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN453R.pas">
+				<Form>FVEN453R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN425R.pas">
+				<Form>FVEN425R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN425Z.pas">
+				<Form>FVEN425Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN453X.pas">
+				<Form>FVEN453X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN453Z.pas">
+				<Form>FVEN453Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN439R.pas">
+				<Form>FVEN439R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN439Z.pas">
+				<Form>FVEN439Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN459Z.pas">
+				<Form>FVEN459Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN521R.pas">
+				<Form>FVEN521R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN027W.pas">
+				<Form>FVEN027W</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601AJ.pas">
+				<Form>FVEN601AJ</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN522R.pas">
+				<Form>FVEN522R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN658E.pas">
+				<Form>FVEN658E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN659E.pas">
+				<Form>FVEN659E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN523R.pas">
+				<Form>FVEN523R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN659Z.pas">
+				<Form>FVEN659Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN659X.pas">
+				<Form>FVEN659X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN524R.pas">
+				<Form>FVEN524R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN524B.pas">
+				<Form>FVEN524B</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN524C.pas">
+				<Form>FVEN524C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN524D.pas">
+				<Form>FVEN524D</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN525R.pas">
+				<Form>FVEN525R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN660E.pas">
+				<Form>FVEN660E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN526R.pas">
+				<Form>FVEN526R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN661E.pas">
+				<Form>FVEN661E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN900X.pas"/>
+			<DCCReference Include="..\VEN527R.pas">
+				<Form>FVEN527R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601AR.pas">
+				<Form>FVEN601AR</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN601VB.pas">
+				<Form>FVEN601VB</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN200P.pas">
+				<Form>FVEN200P</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN034C.pas">
+				<Form>FVEN034C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN602K.pas">
+				<Form>FVEN602K</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN209P.pas"/>
+			<DCCReference Include="..\VEN209Z.pas"/>
+			<DCCReference Include="..\VEN209X.pas"/>
+			<DCCReference Include="..\VEN209W.pas"/>
+			<DCCReference Include="..\VEN662E.pas">
+				<Form>FVEN662E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN401R.pas">
+				<Form>FVEN401R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN528R.pas">
+				<Form>FVEN528R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN493R.pas">
+				<Form>FVEN493R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN034Z.pas">
+				<Form>FVEN034Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN756E.pas">
+				<Form>FVEN756E</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN529R.pas">
+				<Form>FVEN529R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN046C.pas">
+				<Form>FVEN046C</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN530R.pas">
+				<Form>FVEN530R</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN530A.pas">
+				<Form>FVEN530A</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN756X.pas">
+				<Form>FVEN756X</Form>
+			</DCCReference>
+			<DCCReference Include="..\VEN524A.pas">
+				<Form>FVEN524A</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisPAR\PAR035C.pas">
+				<Form>FPAR035C</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST617E.pas">
+				<Form>FEST617E</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST618E.pas">
+				<Form>FEST618E</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST620E.pas">
+				<Form>FEST620E</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST619E.pas">
+				<Form>FEST619E</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST446R.pas">
+				<Form>FEST446R</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST447R.PAS">
+				<Form>FEST447R</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST501R.pas">
+				<Form>FEST501R</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST100C.pas">
+				<Form>FEST100C</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST655E.pas">
+				<Form>FEST655E</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST003C.pas">
+				<Form>FEST003C</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST009C.pas">
+				<Form>FEST009C</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST511R.pas">
+				<Form>FEST511R</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisEST\EST048C.PAS">
+				<Form>FEST048C</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisREC\REC483R.pas">
+				<Form>FREC483R</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisREC\REC480R.pas"/>
+			<DCCReference Include="..\..\SisREC\REC473R.pas">
+				<Form>FREC473R</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisREC\REC438R.pas">
+				<Form>FREC438R</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisREC\REC408Z.pas">
+				<Form>FREC408Z</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisREC\REC012C.pas">
+				<Form>FREC012C</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisIEF\IEF453R.pas">
+				<Form>FIEF453R</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisIEF\IEF209P.pas">
+				<Form>FIEF209P</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\SisIEF\IEF607E.pas">
+				<Form>FIEF607E</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Uso Geral\UnitTest\TestCaseBase.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UnitTest\FutureWindows.pas"/>
+			<DCCReference Include="..\..\Uso Geral\UnitTest\TestUsoGeral.pas"/>
+			<DCCReference Include="TestVEN000C.pas"/>
+			<DCCReference Include="TestVEN001C.pas"/>
+			<DCCReference Include="TestVEN604E.pas"/>
+			<DCCReference Include="TestVEN601E.pas"/>
+			<DCCReference Include="TestVEN602E.pas"/>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcbofficexp160.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k160.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp160.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+					<Source>
+						<Source Name="MainSource">IntesigVENTests.dpr</Source>
+					</Source>
+				</Delphi.Personality>
+				<Deployment/>
+				<Platforms>
+					<Platform value="Win64">False</Platform>
+					<Platform value="OSX32">False</Platform>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+				<UnitTesting>
+					<TestFramework>DUnit / Delphi Win32</TestFramework>
+					<TestRunner>GUI</TestRunner>
+					<SourceProjectName>C:\SIS\SisVEN\IntesigVEN.dproj</SourceProjectName>
+					<TestProjectName/>
+				</UnitTesting>
+				<ModelSupport>False</ModelSupport>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	</Project>
