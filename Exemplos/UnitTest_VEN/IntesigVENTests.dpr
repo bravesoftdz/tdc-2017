@@ -1,14 +1,5 @@
 program IntesigVENTests;
 
-(*
- Referências:
-  http://dugce.blogspot.com.br/
-  https://bitbucket.org/marciomartins/dunittestgui
-  http://stackoverflow.com/questions/6573446/delphi-gui-testing-and-modal-forms
-  https://github.com/tomazy/DelphiUtils
-  https://github.com/tomazy/DelphiUtils/blob/master/Demos/UnitTesting/test/TestFutureWindows.pas
-*)
-
 uses
   DUnitTestRunner,
 

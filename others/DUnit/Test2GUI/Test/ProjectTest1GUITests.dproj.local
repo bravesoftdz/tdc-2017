@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2016/05/23 15:23:58.000.986,=C:\Ferramentas SVN\Intesig_TestCase\Exemplos\DUnit\Test2GUI\Test\TestTest1GUI.pas</Transaction>
-    <Transaction>2016/05/23 15:23:59.000.302,=C:\Ferramentas SVN\Intesig_TestCase\Exemplos\DUnit\Test2GUI\Test1GUI.pas</Transaction>
-    <Transaction>2017/07/07 15:39:41.452,C:\Users\leo\Dropbox\---TDC 2017\Presentation\Exemplos\DUnit\Test2GUI\Test1GUI.pas=</Transaction>
-    <Transaction>2017/07/07 15:39:49.693,=C:\Users\leo\Dropbox\---TDC 2017\Presentation\Exemplos\DUnit\Test2GUI\Test1GUI.pas</Transaction>
-  </Transactions>
-</BorlandProject>
