@@ -27,7 +27,7 @@ type
     [TestCase('TesteSubtracao1','3,4,-1')]
     [TestCase('TesteSubtracao2','5,4,1')]
     [TestCase('TesteSubtracao3','100,90,10')]
-    [TestCase('TesteSubtracao4','100,80,20')]
+    [TestCase('TesteSubtracao4','100,80,10')]
     procedure TesteSubtracao(Value1, Value2, _Result: Real);
   end;
 

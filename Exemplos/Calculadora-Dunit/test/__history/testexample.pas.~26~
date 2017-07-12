@@ -51,7 +51,7 @@ begin
   CheckEquals(0, R);
 
   R := TFormExample1.Subtracao(10,5);
-  CheckEquals(5, R);
+  CheckEquals(8, R);
 
   R := TFormExample1.Subtracao(-1,-1);
   CheckEquals(0, R);

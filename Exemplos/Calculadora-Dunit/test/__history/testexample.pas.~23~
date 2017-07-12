@@ -14,7 +14,8 @@ type
     procedure SetUp; override;
     procedure TearDown; override;
   published
-    procedure Test1;
+    procedure TestSoma1;
+    procedure TestSubtracao1;
   end;
 
 implementation
@@ -23,19 +24,37 @@ implementation
 
 procedure TExampleTest.SetUp;
 begin
-  //TExampleTest := TExampleTest.Create(nil);
+  //
 end;
 
 procedure TExampleTest.TearDown;
 begin
-  //TExampleTest.Free;
-  //TExampleTest := nil;
+  //
 end;
 
-procedure TExampleTest.Test1;
+procedure TExampleTest.TestSoma1;
 begin
   R := TFormExample1.Soma(5,5);
   CheckEquals(10, R);
+
+  R := TFormExample1.Soma(10,5);
+  CheckEquals(15, R);
+
+  R := TFormExample1.Soma(-1,-1);
+  CheckEquals(-2, R);
+
+end;
+
+procedure TExampleTest.TestSubtracao1;
+begin
+  R := TFormExample1.Subtracao(5,5);
+  CheckEquals(0, R);
+
+  R := TFormExample1.Subtracao(10,5);
+  CheckEquals(5, R);
+
+  R := TFormExample1.Subtracao(-1,-1);
+  CheckEquals(0, R);
 
 end;
 
