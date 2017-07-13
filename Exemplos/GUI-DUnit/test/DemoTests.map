@@ -1,9 +1,9 @@
 
  Start         Length     Name                   Class
- 0001:00401000 0023F054H .text                   CODE
- 0002:00641000 00001788H .itext                  ICODE
- 0003:00643000 00005524H .data                   DATA
- 0004:00649000 0000620CH .bss                    BSS
+ 0001:00401000 0023EEF0H .text                   CODE
+ 0002:00640000 00001788H .itext                  ICODE
+ 0003:00642000 00005524H .data                   DATA
+ 0004:00648000 0000620CH .bss                    BSS
  0005:00000000 00000054H .tls                    TLS
  0006:00400000 00000000H .pdata                  PDATA
 
@@ -86,15 +86,15 @@ Detailed map of segments
  0001:00222A14 000019C4 C=CODE     S=.text    G=(none)   M=Vcl.Buttons ACBP=A9
  0001:002243D8 0000997C C=CODE     S=.text    G=(none)   M=GUITestRunner ACBP=A9
  0001:0022DD54 00001E94 C=CODE     S=.text    G=(none)   M=TextTestRunner ACBP=A9
- 0001:0022FBE8 00003584 C=CODE     S=.text    G=(none)   M=FutureWindows ACBP=A9
- 0001:0023316C 000009EC C=CODE     S=.text    G=(none)   M=uModel   ACBP=A9
- 0001:00233B58 000008AC C=CODE     S=.text    G=(none)   M=uStudentEditDialog ACBP=A9
- 0001:00234404 00000EB8 C=CODE     S=.text    G=(none)   M=uMainForm ACBP=A9
- 0001:002352BC 0000038C C=CODE     S=.text    G=(none)   M=TestCaseBase ACBP=A9
- 0001:00235648 00000BF4 C=CODE     S=.text    G=(none)   M=TestStudentEditDialog ACBP=A9
- 0001:0023623C 00001F70 C=CODE     S=.text    G=(none)   M=TestMainForm ACBP=A9
- 0001:002381AC 00000008 C=CODE     S=.text    G=(none)   M=TestFutureWindows ACBP=A9
- 0001:002381B4 00006EA0 C=CODE     S=.text    G=(none)   M=DemoTests ACBP=A9
+ 0001:0022FBE8 000034F4 C=CODE     S=.text    G=(none)   M=FutureWindows ACBP=A9
+ 0001:002330DC 00000984 C=CODE     S=.text    G=(none)   M=uModel   ACBP=A9
+ 0001:00233A60 000008AC C=CODE     S=.text    G=(none)   M=uStudentEditDialog ACBP=A9
+ 0001:0023430C 00000E80 C=CODE     S=.text    G=(none)   M=uMainForm ACBP=A9
+ 0001:0023518C 0000038C C=CODE     S=.text    G=(none)   M=TestCaseBase ACBP=A9
+ 0001:00235518 00000BC0 C=CODE     S=.text    G=(none)   M=TestStudentEditDialog ACBP=A9
+ 0001:002360D8 00001F70 C=CODE     S=.text    G=(none)   M=TestMainForm ACBP=A9
+ 0001:00238048 00000008 C=CODE     S=.text    G=(none)   M=TestFutureWindows ACBP=A9
+ 0001:00238050 00006EA0 C=CODE     S=.text    G=(none)   M=DemoTests ACBP=A9
  0002:00000000 000000E0 C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000E0 00000008 C=ICODE    S=.itext   G=(none)   M=SysInit  ACBP=A9
  0002:000000E8 00000018 C=ICODE    S=.itext   G=(none)   M=Winapi.Windows ACBP=A9
@@ -243,7 +243,7 @@ Detailed map of segments
   Address             Publics by Name
 
  0002:0000173C       DemoTests.DemoTests
- 0001:002381B4       DemoTests.Finalization
+ 0001:00238050       DemoTests.Finalization
  0004:000061F8       FutureWindows..4
  0001:00230848       FutureWindows..TAbstractFutureWindow
  0001:00230188       FutureWindows..TAbstractWindowAction
@@ -257,8 +257,8 @@ Detailed map of segments
  0001:00231170       FutureWindows..TWindowActionProcAction
  0001:0022FF14       FutureWindows..TWindowActions
  0001:00230A0C       FutureWindows..TWindowCallbackList
- 0001:00231BA4       FutureWindows.enum_windows_proc
- 0001:002330F0       FutureWindows.Finalization
+ 0001:00231B80       FutureWindows.enum_windows_proc
+ 0001:00233060       FutureWindows.Finalization
  0002:0000167C       FutureWindows.FutureWindows
  0001:00231620       FutureWindows.TAbstractFutureWindow.CheckRaiseExecException
  0001:00231658       FutureWindows.TAbstractFutureWindow.Destroy
@@ -268,78 +268,78 @@ Detailed map of segments
  0001:002316F0       FutureWindows.TAbstractFutureWindow.ExecProc
  0001:002317F0       FutureWindows.TAbstractFutureWindow.ExecSendKey
  0001:00231858       FutureWindows.TAbstractFutureWindow.ExecuteActions
- 0001:00231A70       FutureWindows.TAbstractFutureWindow.GetAction
- 0001:00231AE8       FutureWindows.TAbstractFutureWindow.GetActionsCount
- 0001:00231B18       FutureWindows.TAbstractFutureWindow.SetExceptionHandler
- 0001:00231B4C       FutureWindows.TAbstractFutureWindow.TryCloseWindow
- 0001:002325F8       FutureWindows.TCloseWindowAction.Execute
- 0001:002321B0       FutureWindows.TFutureWindow.CheckWindow
- 0001:00232410       FutureWindows.TFutureWindow.Create
- 0001:0023247C       FutureWindows.TFutureWindow.Destroy
- 0001:002324CC       FutureWindows.TFutureWindow.GetDesciption
- 0001:002324EC       FutureWindows.TFutureWindow.StartWaiting
- 0001:00232538       FutureWindows.TFutureWindow.TimedOut
- 0001:00232554       FutureWindows.TFutureWindow.WindowFound
- 0001:00231C34       FutureWindows.TFutureWindowObserver.CallCallbacks
- 0001:00231DF0       FutureWindows.TFutureWindowObserver.CallCallbacksForWindow
- 0001:00231E4C       FutureWindows.TFutureWindowObserver.Create
- 0001:00231EBC       FutureWindows.TFutureWindowObserver.Destroy
- 0001:00231F0C       FutureWindows.TFutureWindowObserver.Finalize
+ 0001:00231A4C       FutureWindows.TAbstractFutureWindow.GetAction
+ 0001:00231AC4       FutureWindows.TAbstractFutureWindow.GetActionsCount
+ 0001:00231AF4       FutureWindows.TAbstractFutureWindow.SetExceptionHandler
+ 0001:00231B28       FutureWindows.TAbstractFutureWindow.TryCloseWindow
+ 0001:0023258C       FutureWindows.TCloseWindowAction.Execute
+ 0001:00232168       FutureWindows.TFutureWindow.CheckWindow
+ 0001:002323A4       FutureWindows.TFutureWindow.Create
+ 0001:00232410       FutureWindows.TFutureWindow.Destroy
+ 0001:00232460       FutureWindows.TFutureWindow.GetDesciption
+ 0001:00232480       FutureWindows.TFutureWindow.StartWaiting
+ 0001:002324CC       FutureWindows.TFutureWindow.TimedOut
+ 0001:002324E8       FutureWindows.TFutureWindow.WindowFound
+ 0001:00231C10       FutureWindows.TFutureWindowObserver.CallCallbacks
+ 0001:00231DCC       FutureWindows.TFutureWindowObserver.CallCallbacksForWindow
+ 0001:00231E28       FutureWindows.TFutureWindowObserver.Create
+ 0001:00231E98       FutureWindows.TFutureWindowObserver.Destroy
+ 0001:00231EE8       FutureWindows.TFutureWindowObserver.Finalize
  0004:000061FC       FutureWindows.TFutureWindowObserver.FInstance
- 0001:00231F20       FutureWindows.TFutureWindowObserver.GetInstance
- 0001:00231F4C       FutureWindows.TFutureWindowObserver.RegisterCallback
- 0001:002320A8       FutureWindows.TFutureWindowObserver.StartTimer
- 0001:002320E4       FutureWindows.TFutureWindowObserver.StopTimer
- 0001:00232118       FutureWindows.TFutureWindowObserver.UnRegisterCallback
- 0001:00232168       FutureWindows.TFutureWindowObserver.WndProc
+ 0001:00231EFC       FutureWindows.TFutureWindowObserver.GetInstance
+ 0001:00231F28       FutureWindows.TFutureWindowObserver.RegisterCallback
+ 0001:00232060       FutureWindows.TFutureWindowObserver.StartTimer
+ 0001:0023209C       FutureWindows.TFutureWindowObserver.StopTimer
+ 0001:002320D0       FutureWindows.TFutureWindowObserver.UnRegisterCallback
+ 0001:00232120       FutureWindows.TFutureWindowObserver.WndProc
  0001:00231580       FutureWindows.TFutureWindows.Expect
  0001:002315AC       FutureWindows.TFutureWindows.ExpectChild
  0001:002315EC       FutureWindows.TFutureWindows.GetWindow
- 0001:0023261C       FutureWindows.TPauseAction.Create
- 0001:00232790       FutureWindows.TPauseAction.Execute
- 0001:00232570       FutureWindows.TSendKeyAction.Create
- 0001:002325B8       FutureWindows.TSendKeyAction.Execute
- 0001:00232800       FutureWindows.TWindow.BringToFront
- 0001:00232818       FutureWindows.TWindow.Create
- 0001:0023285C       FutureWindows.TWindow.Destroy
- 0001:00232898       FutureWindows.TWindow.GetAsControl
- 0001:002328E0       FutureWindows.TWindow.GetHandle
- 0001:002328FC       FutureWindows.TWindow.GetHeight
- 0001:00232920       FutureWindows.TWindow.GetParent
- 0001:002329A0       FutureWindows.TWindow.GetProcessId
- 0001:002329C4       FutureWindows.TWindow.GetRect
- 0001:002329FC       FutureWindows.TWindow.GetText
- 0001:00232A48       FutureWindows.TWindow.GetTextLen
- 0001:00232A6C       FutureWindows.TWindow.GetThreadId
- 0001:00232A90       FutureWindows.TWindow.GetWidth
- 0001:00232AB4       FutureWindows.TWindow.GetWindowClass
- 0001:00232B0C       FutureWindows.TWindow.InitThreadIdAndProcessId
- 0001:00232B38       FutureWindows.TWindow.IsEnabled
- 0001:00232B60       FutureWindows.TWindow.IsUnicode
- 0001:00232B88       FutureWindows.TWindow.IsVisible
- 0001:00232BB0       FutureWindows.TWindow.IsWindowValid
- 0001:00232BD8       FutureWindows.TWindow.PostMessage
- 0001:00232C40       FutureWindows.TWindow.SendMessage
- 0001:00232C9C       FutureWindows.TWindow.SetHeight
- 0001:00232CC4       FutureWindows.TWindow.SetText
- 0001:00232CEC       FutureWindows.TWindow.SetWidth
- 0001:00232D14       FutureWindows.TWindow.SetWindowSize
- 0001:00232FB0       FutureWindows.TWindowActionProcAction.Create
- 0001:00232FF8       FutureWindows.TWindowActionProcAction.Execute
- 0001:00233018       FutureWindows.TWindowActions.CreateCloseWindowAction
- 0001:00233048       FutureWindows.TWindowActions.CreatePauseAction
- 0001:00233084       FutureWindows.TWindowActions.CreateProcAction
- 0001:002330B8       FutureWindows.TWindowActions.CreateSendKeyAction
- 0001:00232D44       FutureWindows.TWindowCallbackList.Add
- 0001:00232D98       FutureWindows.TWindowCallbackList.Clear
- 0001:00232DCC       FutureWindows.TWindowCallbackList.Create
- 0001:00232E18       FutureWindows.TWindowCallbackList.Delete
- 0001:00232E50       FutureWindows.TWindowCallbackList.Destroy
- 0001:00232E94       FutureWindows.TWindowCallbackList.Find
- 0001:00232F0C       FutureWindows.TWindowCallbackList.GetCount
- 0001:00232F28       FutureWindows.TWindowCallbackList.GetItem
- 0001:00232F58       FutureWindows.TWindowCallbackList.Has
- 0001:00232F80       FutureWindows.TWindowCallbackList.Remove
+ 0001:002325B0       FutureWindows.TPauseAction.Create
+ 0001:00232700       FutureWindows.TPauseAction.Execute
+ 0001:00232504       FutureWindows.TSendKeyAction.Create
+ 0001:0023254C       FutureWindows.TSendKeyAction.Execute
+ 0001:00232770       FutureWindows.TWindow.BringToFront
+ 0001:00232788       FutureWindows.TWindow.Create
+ 0001:002327CC       FutureWindows.TWindow.Destroy
+ 0001:00232808       FutureWindows.TWindow.GetAsControl
+ 0001:00232850       FutureWindows.TWindow.GetHandle
+ 0001:0023286C       FutureWindows.TWindow.GetHeight
+ 0001:00232890       FutureWindows.TWindow.GetParent
+ 0001:00232910       FutureWindows.TWindow.GetProcessId
+ 0001:00232934       FutureWindows.TWindow.GetRect
+ 0001:0023296C       FutureWindows.TWindow.GetText
+ 0001:002329B8       FutureWindows.TWindow.GetTextLen
+ 0001:002329DC       FutureWindows.TWindow.GetThreadId
+ 0001:00232A00       FutureWindows.TWindow.GetWidth
+ 0001:00232A24       FutureWindows.TWindow.GetWindowClass
+ 0001:00232A7C       FutureWindows.TWindow.InitThreadIdAndProcessId
+ 0001:00232AA8       FutureWindows.TWindow.IsEnabled
+ 0001:00232AD0       FutureWindows.TWindow.IsUnicode
+ 0001:00232AF8       FutureWindows.TWindow.IsVisible
+ 0001:00232B20       FutureWindows.TWindow.IsWindowValid
+ 0001:00232B48       FutureWindows.TWindow.PostMessage
+ 0001:00232BB0       FutureWindows.TWindow.SendMessage
+ 0001:00232C0C       FutureWindows.TWindow.SetHeight
+ 0001:00232C34       FutureWindows.TWindow.SetText
+ 0001:00232C5C       FutureWindows.TWindow.SetWidth
+ 0001:00232C84       FutureWindows.TWindow.SetWindowSize
+ 0001:00232F20       FutureWindows.TWindowActionProcAction.Create
+ 0001:00232F68       FutureWindows.TWindowActionProcAction.Execute
+ 0001:00232F88       FutureWindows.TWindowActions.CreateCloseWindowAction
+ 0001:00232FB8       FutureWindows.TWindowActions.CreatePauseAction
+ 0001:00232FF4       FutureWindows.TWindowActions.CreateProcAction
+ 0001:00233028       FutureWindows.TWindowActions.CreateSendKeyAction
+ 0001:00232CB4       FutureWindows.TWindowCallbackList.Add
+ 0001:00232D08       FutureWindows.TWindowCallbackList.Clear
+ 0001:00232D3C       FutureWindows.TWindowCallbackList.Create
+ 0001:00232D88       FutureWindows.TWindowCallbackList.Delete
+ 0001:00232DC0       FutureWindows.TWindowCallbackList.Destroy
+ 0001:00232E04       FutureWindows.TWindowCallbackList.Find
+ 0001:00232E7C       FutureWindows.TWindowCallbackList.GetCount
+ 0001:00232E98       FutureWindows.TWindowCallbackList.GetItem
+ 0001:00232EC8       FutureWindows.TWindowCallbackList.Has
+ 0001:00232EF0       FutureWindows.TWindowCallbackList.Remove
  0001:00224510       GUITestRunner..TGUITestRunner
  0001:0022B8A0       GUITestRunner.DoApply
  0001:0022A618       GUITestRunner.FormatElapsedTime
@@ -528,7 +528,7 @@ Detailed map of segments
  0003:00000C18       SysInit.TlsIndex
  0005:00000054       SysInit.TlsLast
  0001:00010284       SysInit.TlsSetValue
- 0004:FFDB7000       SysInit.__ImageBase
+ 0004:FFDB8000       SysInit.__ImageBase
  0001:000042C0       System.$thunk_GetLogicalProcessorInformation
  0001:00004238       System.$thunk_MessageBoxA
  0004:00000990       System..71
@@ -8124,10 +8124,10 @@ Detailed map of segments
  0001:001F58B4       System.Win.TaskbarCore.TTaskbarHandler.DoWindowPreviewRequest
  0001:001F58D4       System.Win.TaskbarCore.TTaskbarHandler.Initialize
  0001:001F58DC       System.Win.TaskbarCore.TTaskbarHandler.UnregisterTab
- 0001:00235318       TestCaseBase..TTestCaseBase
- 0001:0023556C       TestCaseBase.TTestCaseBase.HandleException
- 0001:0023559C       TestCaseBase.TTestCaseBase.ProcessMessages
- 0001:00235608       TestCaseBase.TTestCaseBase.TearDown
+ 0001:002351E8       TestCaseBase..TTestCaseBase
+ 0001:0023543C       TestCaseBase.TTestCaseBase.HandleException
+ 0001:0023546C       TestCaseBase.TTestCaseBase.ProcessMessages
+ 0001:002354D8       TestCaseBase.TTestCaseBase.TearDown
  0004:000061C4       TestFramework..71
  0001:00217790       TestFramework..EBreakingTestFailure
  0001:002174A0       TestFramework..EDunitException
@@ -8355,46 +8355,46 @@ Detailed map of segments
  0001:00221F44       TestFramework.TTestSuite.Tests
  0003:00004CCC       TestFramework.__TestRegistry
  0004:00006208       TestFutureWindows..1
- 0001:002381AC       TestFutureWindows.Finalization
+ 0001:00238048       TestFutureWindows.Finalization
  0002:00001730       TestFutureWindows.TestFutureWindows
  0004:00006204       TestMainForm..1
- 0001:0023623C       TestMainForm..TMainFormTestCase
- 0001:00236AD4       TestMainForm..TMainFormTestCase.AddStudent_Fast$ActRec
- 0001:00236754       TestMainForm..TMainFormTestCase.AddStudent_Slow$ActRec
- 0001:00237D9C       TestMainForm..TMainFormTestCase.TestValidation_EmailEmpty$ActRec
- 0001:00237820       TestMainForm..TMainFormTestCase.TestValidation_NameEmpty$ActRec
- 0001:002381A4       TestMainForm.Finalization
+ 0001:002360D8       TestMainForm..TMainFormTestCase
+ 0001:00236970       TestMainForm..TMainFormTestCase.AddStudent_Fast$ActRec
+ 0001:002365F0       TestMainForm..TMainFormTestCase.AddStudent_Slow$ActRec
+ 0001:00237C38       TestMainForm..TMainFormTestCase.TestValidation_EmailEmpty$ActRec
+ 0001:002376BC       TestMainForm..TMainFormTestCase.TestValidation_NameEmpty$ActRec
+ 0001:00238040       TestMainForm.Finalization
  0002:000016DC       TestMainForm.TestMainForm
- 0001:00236EE0       TestMainForm.TMainFormTestCase.AddStudents_Fast
- 0001:00236D98       TestMainForm.TMainFormTestCase.AddStudents_Slow
- 0001:00236C90       TestMainForm.TMainFormTestCase.AddStudent_Fast
- 0001:00236C08       TestMainForm.TMainFormTestCase.AddStudent_Fast$ActRec.$0$Body
- 0001:00236918       TestMainForm.TMainFormTestCase.AddStudent_Slow
- 0001:00236888       TestMainForm.TMainFormTestCase.AddStudent_Slow$ActRec.$0$Body
- 0001:00237028       TestMainForm.TMainFormTestCase.ExecuteMainFormAction
- 0001:002370D4       TestMainForm.TMainFormTestCase.SetUp
- 0001:00237130       TestMainForm.TMainFormTestCase.TearDown
- 0001:002371D0       TestMainForm.TMainFormTestCase.TestAddManyStudents_Fast
- 0001:0023715C       TestMainForm.TMainFormTestCase.TestAddManyStudents_Slow
- 0001:00237244       TestMainForm.TMainFormTestCase.TestAddNewStudent
- 0001:00237368       TestMainForm.TMainFormTestCase.TestDeleteOneStudent
- 0001:00237500       TestMainForm.TMainFormTestCase.TestDeleteStudents
- 0001:00237FF4       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty
- 0001:00237EB8       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$0$Body
- 0001:00237F8C       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$1$Body
- 0001:00237A78       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty
- 0001:0023793C       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$0$Body
- 0001:00237A10       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$1$Body
+ 0001:00236D7C       TestMainForm.TMainFormTestCase.AddStudents_Fast
+ 0001:00236C34       TestMainForm.TMainFormTestCase.AddStudents_Slow
+ 0001:00236B2C       TestMainForm.TMainFormTestCase.AddStudent_Fast
+ 0001:00236AA4       TestMainForm.TMainFormTestCase.AddStudent_Fast$ActRec.$0$Body
+ 0001:002367B4       TestMainForm.TMainFormTestCase.AddStudent_Slow
+ 0001:00236724       TestMainForm.TMainFormTestCase.AddStudent_Slow$ActRec.$0$Body
+ 0001:00236EC4       TestMainForm.TMainFormTestCase.ExecuteMainFormAction
+ 0001:00236F70       TestMainForm.TMainFormTestCase.SetUp
+ 0001:00236FCC       TestMainForm.TMainFormTestCase.TearDown
+ 0001:0023706C       TestMainForm.TMainFormTestCase.TestAddManyStudents_Fast
+ 0001:00236FF8       TestMainForm.TMainFormTestCase.TestAddManyStudents_Slow
+ 0001:002370E0       TestMainForm.TMainFormTestCase.TestAddNewStudent
+ 0001:00237204       TestMainForm.TMainFormTestCase.TestDeleteOneStudent
+ 0001:0023739C       TestMainForm.TMainFormTestCase.TestDeleteStudents
+ 0001:00237E90       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty
+ 0001:00237D54       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$0$Body
+ 0001:00237E28       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$1$Body
+ 0001:00237914       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty
+ 0001:002377D8       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$0$Body
+ 0001:002378AC       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$1$Body
  0004:00006200       TestStudentEditDialog..1
- 0001:00235918       TestStudentEditDialog..TEditStudentFutureWindowAction
- 0001:00235648       TestStudentEditDialog..TStudentEditDialogTestCase
- 0001:00236234       TestStudentEditDialog.Finalization
- 0001:00235FF4       TestStudentEditDialog.TEditStudentFutureWindowAction.Create
- 0001:0023605C       TestStudentEditDialog.TEditStudentFutureWindowAction.Execute
+ 0001:002357E8       TestStudentEditDialog..TEditStudentFutureWindowAction
+ 0001:00235518       TestStudentEditDialog..TStudentEditDialogTestCase
+ 0001:002360D0       TestStudentEditDialog.Finalization
+ 0001:00235EC4       TestStudentEditDialog.TEditStudentFutureWindowAction.Create
+ 0001:00235F2C       TestStudentEditDialog.TEditStudentFutureWindowAction.Execute
  0002:00001688       TestStudentEditDialog.TestStudentEditDialog
- 0001:00235A98       TestStudentEditDialog.TStudentEditDialogTestCase.TestCloseForm
- 0001:00235B68       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro1
- 0001:00235D8C       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro2
+ 0001:00235968       TestStudentEditDialog.TStudentEditDialogTestCase.TestCloseForm
+ 0001:00235A38       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro1
+ 0001:00235C5C       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro2
  0001:0022DED8       TextTestRunner..TTextTestListener
  0001:0022F734       TextTestRunner.RunRegisteredTests
  0001:0022F62C       TextTestRunner.RunTest
@@ -8421,51 +8421,51 @@ Detailed map of segments
  0001:0022F1E4       TextTestRunner.TTextTestListener.TestingStarts
  0001:0022F114       TextTestRunner.TTextTestListener.TruncateString
  0001:0022F848       TextTestRunner.TTextTestListener.Warning
- 0001:00234404       uMainForm..TMainForm
- 0001:00234BAC       uMainForm.TMainForm.acDeleteStudentExecute
- 0001:00234D78       uMainForm.TMainForm.acDeleteStudentUpdate
- 0001:00234DE0       uMainForm.TMainForm.acEditStudentExecute
- 0001:00234DF8       uMainForm.TMainForm.acEditStudentUpdate
- 0001:00234E60       uMainForm.TMainForm.acNewStudentExecute
- 0001:00234ED8       uMainForm.TMainForm.Confirm
- 0001:00234F50       uMainForm.TMainForm.EditCurrentStudent
- 0001:00234FB8       uMainForm.TMainForm.EditStudent
- 0001:00234FDC       uMainForm.TMainForm.FormCreate
- 0001:0023503C       uMainForm.TMainForm.GetCurrentStudent
- 0001:00235068       uMainForm.TMainForm.ListItemToStudent
- 0001:002350A8       uMainForm.TMainForm.lvStudentsData
- 0001:002351AC       uMainForm.TMainForm.lvStudentsDblClick
- 0001:002351C4       uMainForm.TMainForm.lvStudentsEditing
- 0001:00235228       uMainForm.TMainForm.SetCurrentStudent
- 0001:002351E0       uMainForm.TMainForm.UpdateStudentView
- 0001:0023528C       uMainForm.TMainForm.UpdateView
- 0001:0023350C       uModel..TCourse
- 0001:002331CC       uModel..TModel
- 0001:00233370       uModel..TStudent
- 0001:0023372C       uModel.TCourse.AddStudent
- 0001:0023388C       uModel.TCourse.Create
- 0001:002338F0       uModel.TCourse.GetName
- 0001:00233910       uModel.TCourse.GetStudent
- 0001:00233988       uModel.TCourse.GetStudentsCount
- 0001:002339A8       uModel.TCourse.HasStudent
- 0001:002339CC       uModel.TCourse.IndexOfStudent
- 0001:002339F0       uModel.TCourse.RemoveStudent
- 0001:00233B38       uModel.TCourse.SetName
- 0001:002336CC       uModel.TModel.CreateCourse
- 0001:002336FC       uModel.TModel.CreateStudent
- 0001:00233610       uModel.TStudent.GetDateOfBirth
- 0001:00233630       uModel.TStudent.GetEmail
- 0001:00233650       uModel.TStudent.GetName
- 0001:00233670       uModel.TStudent.SetDateOfBirth
- 0001:0023368C       uModel.TStudent.SetEmail
- 0001:002336AC       uModel.TStudent.SetName
- 0001:00233B58       uStudentEditDialog..EValidationError
- 0001:00233C0C       uStudentEditDialog..TStudentEditDialog
- 0001:00234018       uStudentEditDialog.TStudentEditDialog.Edit
- 0001:0023409C       uStudentEditDialog.TStudentEditDialog.FormCloseQuery
- 0001:002340C4       uStudentEditDialog.TStudentEditDialog.InitView
- 0001:00234198       uStudentEditDialog.TStudentEditDialog.UpdateModel
- 0001:00234244       uStudentEditDialog.TStudentEditDialog.ValidateView
+ 0001:0023430C       uMainForm..TMainForm
+ 0001:00234AB4       uMainForm.TMainForm.acDeleteStudentExecute
+ 0001:00234C48       uMainForm.TMainForm.acDeleteStudentUpdate
+ 0001:00234CB0       uMainForm.TMainForm.acEditStudentExecute
+ 0001:00234CC8       uMainForm.TMainForm.acEditStudentUpdate
+ 0001:00234D30       uMainForm.TMainForm.acNewStudentExecute
+ 0001:00234DA8       uMainForm.TMainForm.Confirm
+ 0001:00234E20       uMainForm.TMainForm.EditCurrentStudent
+ 0001:00234E88       uMainForm.TMainForm.EditStudent
+ 0001:00234EAC       uMainForm.TMainForm.FormCreate
+ 0001:00234F0C       uMainForm.TMainForm.GetCurrentStudent
+ 0001:00234F38       uMainForm.TMainForm.ListItemToStudent
+ 0001:00234F78       uMainForm.TMainForm.lvStudentsData
+ 0001:0023507C       uMainForm.TMainForm.lvStudentsDblClick
+ 0001:00235094       uMainForm.TMainForm.lvStudentsEditing
+ 0001:002350F8       uMainForm.TMainForm.SetCurrentStudent
+ 0001:002350B0       uMainForm.TMainForm.UpdateStudentView
+ 0001:0023515C       uMainForm.TMainForm.UpdateView
+ 0001:0023347C       uModel..TCourse
+ 0001:0023313C       uModel..TModel
+ 0001:002332E0       uModel..TStudent
+ 0001:0023369C       uModel.TCourse.AddStudent
+ 0001:002337C8       uModel.TCourse.Create
+ 0001:0023382C       uModel.TCourse.GetName
+ 0001:0023384C       uModel.TCourse.GetStudent
+ 0001:002338C4       uModel.TCourse.GetStudentsCount
+ 0001:002338E4       uModel.TCourse.HasStudent
+ 0001:00233908       uModel.TCourse.IndexOfStudent
+ 0001:0023392C       uModel.TCourse.RemoveStudent
+ 0001:00233A40       uModel.TCourse.SetName
+ 0001:0023363C       uModel.TModel.CreateCourse
+ 0001:0023366C       uModel.TModel.CreateStudent
+ 0001:00233580       uModel.TStudent.GetDateOfBirth
+ 0001:002335A0       uModel.TStudent.GetEmail
+ 0001:002335C0       uModel.TStudent.GetName
+ 0001:002335E0       uModel.TStudent.SetDateOfBirth
+ 0001:002335FC       uModel.TStudent.SetEmail
+ 0001:0023361C       uModel.TStudent.SetName
+ 0001:00233A60       uStudentEditDialog..EValidationError
+ 0001:00233B14       uStudentEditDialog..TStudentEditDialog
+ 0001:00233F20       uStudentEditDialog.TStudentEditDialog.Edit
+ 0001:00233FA4       uStudentEditDialog.TStudentEditDialog.FormCloseQuery
+ 0001:00233FCC       uStudentEditDialog.TStudentEditDialog.InitView
+ 0001:002340A0       uStudentEditDialog.TStudentEditDialog.UpdateModel
+ 0001:0023414C       uStudentEditDialog.TStudentEditDialog.ValidateView
  0004:00005F98       Vcl.ActnList..7
  0001:00114F30       Vcl.ActnList..TAction
  0001:001149FC       Vcl.ActnList..TActionLink
@@ -30380,161 +30380,161 @@ Detailed map of segments
  0001:00231784       FutureWindows.TAbstractFutureWindow.ExecPauseAction
  0001:002317F0       FutureWindows.TAbstractFutureWindow.ExecSendKey
  0001:00231858       FutureWindows.TAbstractFutureWindow.ExecuteActions
- 0001:00231A70       FutureWindows.TAbstractFutureWindow.GetAction
- 0001:00231AE8       FutureWindows.TAbstractFutureWindow.GetActionsCount
- 0001:00231B18       FutureWindows.TAbstractFutureWindow.SetExceptionHandler
- 0001:00231B4C       FutureWindows.TAbstractFutureWindow.TryCloseWindow
- 0001:00231BA4       FutureWindows.enum_windows_proc
- 0001:00231C34       FutureWindows.TFutureWindowObserver.CallCallbacks
- 0001:00231DF0       FutureWindows.TFutureWindowObserver.CallCallbacksForWindow
- 0001:00231E4C       FutureWindows.TFutureWindowObserver.Create
- 0001:00231EBC       FutureWindows.TFutureWindowObserver.Destroy
- 0001:00231F0C       FutureWindows.TFutureWindowObserver.Finalize
- 0001:00231F20       FutureWindows.TFutureWindowObserver.GetInstance
- 0001:00231F4C       FutureWindows.TFutureWindowObserver.RegisterCallback
- 0001:002320A8       FutureWindows.TFutureWindowObserver.StartTimer
- 0001:002320E4       FutureWindows.TFutureWindowObserver.StopTimer
- 0001:00232118       FutureWindows.TFutureWindowObserver.UnRegisterCallback
- 0001:00232168       FutureWindows.TFutureWindowObserver.WndProc
- 0001:002321B0       FutureWindows.TFutureWindow.CheckWindow
- 0001:00232410       FutureWindows.TFutureWindow.Create
- 0001:0023247C       FutureWindows.TFutureWindow.Destroy
- 0001:002324CC       FutureWindows.TFutureWindow.GetDesciption
- 0001:002324EC       FutureWindows.TFutureWindow.StartWaiting
- 0001:00232538       FutureWindows.TFutureWindow.TimedOut
- 0001:00232554       FutureWindows.TFutureWindow.WindowFound
- 0001:00232570       FutureWindows.TSendKeyAction.Create
- 0001:002325B8       FutureWindows.TSendKeyAction.Execute
- 0001:002325F8       FutureWindows.TCloseWindowAction.Execute
- 0001:0023261C       FutureWindows.TPauseAction.Create
- 0001:00232790       FutureWindows.TPauseAction.Execute
- 0001:00232800       FutureWindows.TWindow.BringToFront
- 0001:00232818       FutureWindows.TWindow.Create
- 0001:0023285C       FutureWindows.TWindow.Destroy
- 0001:00232898       FutureWindows.TWindow.GetAsControl
- 0001:002328E0       FutureWindows.TWindow.GetHandle
- 0001:002328FC       FutureWindows.TWindow.GetHeight
- 0001:00232920       FutureWindows.TWindow.GetParent
- 0001:002329A0       FutureWindows.TWindow.GetProcessId
- 0001:002329C4       FutureWindows.TWindow.GetRect
- 0001:002329FC       FutureWindows.TWindow.GetText
- 0001:00232A48       FutureWindows.TWindow.GetTextLen
- 0001:00232A6C       FutureWindows.TWindow.GetThreadId
- 0001:00232A90       FutureWindows.TWindow.GetWidth
- 0001:00232AB4       FutureWindows.TWindow.GetWindowClass
- 0001:00232B0C       FutureWindows.TWindow.InitThreadIdAndProcessId
- 0001:00232B38       FutureWindows.TWindow.IsEnabled
- 0001:00232B60       FutureWindows.TWindow.IsUnicode
- 0001:00232B88       FutureWindows.TWindow.IsVisible
- 0001:00232BB0       FutureWindows.TWindow.IsWindowValid
- 0001:00232BD8       FutureWindows.TWindow.PostMessage
- 0001:00232C40       FutureWindows.TWindow.SendMessage
- 0001:00232C9C       FutureWindows.TWindow.SetHeight
- 0001:00232CC4       FutureWindows.TWindow.SetText
- 0001:00232CEC       FutureWindows.TWindow.SetWidth
- 0001:00232D14       FutureWindows.TWindow.SetWindowSize
- 0001:00232D44       FutureWindows.TWindowCallbackList.Add
- 0001:00232D98       FutureWindows.TWindowCallbackList.Clear
- 0001:00232DCC       FutureWindows.TWindowCallbackList.Create
- 0001:00232E18       FutureWindows.TWindowCallbackList.Delete
- 0001:00232E50       FutureWindows.TWindowCallbackList.Destroy
- 0001:00232E94       FutureWindows.TWindowCallbackList.Find
- 0001:00232F0C       FutureWindows.TWindowCallbackList.GetCount
- 0001:00232F28       FutureWindows.TWindowCallbackList.GetItem
- 0001:00232F58       FutureWindows.TWindowCallbackList.Has
- 0001:00232F80       FutureWindows.TWindowCallbackList.Remove
- 0001:00232FB0       FutureWindows.TWindowActionProcAction.Create
- 0001:00232FF8       FutureWindows.TWindowActionProcAction.Execute
- 0001:00233018       FutureWindows.TWindowActions.CreateCloseWindowAction
- 0001:00233048       FutureWindows.TWindowActions.CreatePauseAction
- 0001:00233084       FutureWindows.TWindowActions.CreateProcAction
- 0001:002330B8       FutureWindows.TWindowActions.CreateSendKeyAction
- 0001:002330F0       FutureWindows.Finalization
- 0001:002331CC       uModel..TModel
- 0001:00233370       uModel..TStudent
- 0001:0023350C       uModel..TCourse
- 0001:00233610       uModel.TStudent.GetDateOfBirth
- 0001:00233630       uModel.TStudent.GetEmail
- 0001:00233650       uModel.TStudent.GetName
- 0001:00233670       uModel.TStudent.SetDateOfBirth
- 0001:0023368C       uModel.TStudent.SetEmail
- 0001:002336AC       uModel.TStudent.SetName
- 0001:002336CC       uModel.TModel.CreateCourse
- 0001:002336FC       uModel.TModel.CreateStudent
- 0001:0023372C       uModel.TCourse.AddStudent
- 0001:0023388C       uModel.TCourse.Create
- 0001:002338F0       uModel.TCourse.GetName
- 0001:00233910       uModel.TCourse.GetStudent
- 0001:00233988       uModel.TCourse.GetStudentsCount
- 0001:002339A8       uModel.TCourse.HasStudent
- 0001:002339CC       uModel.TCourse.IndexOfStudent
- 0001:002339F0       uModel.TCourse.RemoveStudent
- 0001:00233B38       uModel.TCourse.SetName
- 0001:00233B58       uStudentEditDialog..EValidationError
- 0001:00233C0C       uStudentEditDialog..TStudentEditDialog
- 0001:00234018       uStudentEditDialog.TStudentEditDialog.Edit
- 0001:0023409C       uStudentEditDialog.TStudentEditDialog.FormCloseQuery
- 0001:002340C4       uStudentEditDialog.TStudentEditDialog.InitView
- 0001:00234198       uStudentEditDialog.TStudentEditDialog.UpdateModel
- 0001:00234244       uStudentEditDialog.TStudentEditDialog.ValidateView
- 0001:00234404       uMainForm..TMainForm
- 0001:00234BAC       uMainForm.TMainForm.acDeleteStudentExecute
- 0001:00234D78       uMainForm.TMainForm.acDeleteStudentUpdate
- 0001:00234DE0       uMainForm.TMainForm.acEditStudentExecute
- 0001:00234DF8       uMainForm.TMainForm.acEditStudentUpdate
- 0001:00234E60       uMainForm.TMainForm.acNewStudentExecute
- 0001:00234ED8       uMainForm.TMainForm.Confirm
- 0001:00234F50       uMainForm.TMainForm.EditCurrentStudent
- 0001:00234FB8       uMainForm.TMainForm.EditStudent
- 0001:00234FDC       uMainForm.TMainForm.FormCreate
- 0001:0023503C       uMainForm.TMainForm.GetCurrentStudent
- 0001:00235068       uMainForm.TMainForm.ListItemToStudent
- 0001:002350A8       uMainForm.TMainForm.lvStudentsData
- 0001:002351AC       uMainForm.TMainForm.lvStudentsDblClick
- 0001:002351C4       uMainForm.TMainForm.lvStudentsEditing
- 0001:002351E0       uMainForm.TMainForm.UpdateStudentView
- 0001:00235228       uMainForm.TMainForm.SetCurrentStudent
- 0001:0023528C       uMainForm.TMainForm.UpdateView
- 0001:00235318       TestCaseBase..TTestCaseBase
- 0001:0023556C       TestCaseBase.TTestCaseBase.HandleException
- 0001:0023559C       TestCaseBase.TTestCaseBase.ProcessMessages
- 0001:00235608       TestCaseBase.TTestCaseBase.TearDown
- 0001:00235648       TestStudentEditDialog..TStudentEditDialogTestCase
- 0001:00235918       TestStudentEditDialog..TEditStudentFutureWindowAction
- 0001:00235A98       TestStudentEditDialog.TStudentEditDialogTestCase.TestCloseForm
- 0001:00235B68       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro1
- 0001:00235D8C       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro2
- 0001:00235FF4       TestStudentEditDialog.TEditStudentFutureWindowAction.Create
- 0001:0023605C       TestStudentEditDialog.TEditStudentFutureWindowAction.Execute
- 0001:00236234       TestStudentEditDialog.Finalization
- 0001:0023623C       TestMainForm..TMainFormTestCase
- 0001:00236754       TestMainForm..TMainFormTestCase.AddStudent_Slow$ActRec
- 0001:00236888       TestMainForm.TMainFormTestCase.AddStudent_Slow$ActRec.$0$Body
- 0001:00236918       TestMainForm.TMainFormTestCase.AddStudent_Slow
- 0001:00236AD4       TestMainForm..TMainFormTestCase.AddStudent_Fast$ActRec
- 0001:00236C08       TestMainForm.TMainFormTestCase.AddStudent_Fast$ActRec.$0$Body
- 0001:00236C90       TestMainForm.TMainFormTestCase.AddStudent_Fast
- 0001:00236D98       TestMainForm.TMainFormTestCase.AddStudents_Slow
- 0001:00236EE0       TestMainForm.TMainFormTestCase.AddStudents_Fast
- 0001:00237028       TestMainForm.TMainFormTestCase.ExecuteMainFormAction
- 0001:002370D4       TestMainForm.TMainFormTestCase.SetUp
- 0001:00237130       TestMainForm.TMainFormTestCase.TearDown
- 0001:0023715C       TestMainForm.TMainFormTestCase.TestAddManyStudents_Slow
- 0001:002371D0       TestMainForm.TMainFormTestCase.TestAddManyStudents_Fast
- 0001:00237244       TestMainForm.TMainFormTestCase.TestAddNewStudent
- 0001:00237368       TestMainForm.TMainFormTestCase.TestDeleteOneStudent
- 0001:00237500       TestMainForm.TMainFormTestCase.TestDeleteStudents
- 0001:00237820       TestMainForm..TMainFormTestCase.TestValidation_NameEmpty$ActRec
- 0001:0023793C       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$0$Body
- 0001:00237A10       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$1$Body
- 0001:00237A78       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty
- 0001:00237D9C       TestMainForm..TMainFormTestCase.TestValidation_EmailEmpty$ActRec
- 0001:00237EB8       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$0$Body
- 0001:00237F8C       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$1$Body
- 0001:00237FF4       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty
- 0001:002381A4       TestMainForm.Finalization
- 0001:002381AC       TestFutureWindows.Finalization
- 0001:002381B4       DemoTests.Finalization
+ 0001:00231A4C       FutureWindows.TAbstractFutureWindow.GetAction
+ 0001:00231AC4       FutureWindows.TAbstractFutureWindow.GetActionsCount
+ 0001:00231AF4       FutureWindows.TAbstractFutureWindow.SetExceptionHandler
+ 0001:00231B28       FutureWindows.TAbstractFutureWindow.TryCloseWindow
+ 0001:00231B80       FutureWindows.enum_windows_proc
+ 0001:00231C10       FutureWindows.TFutureWindowObserver.CallCallbacks
+ 0001:00231DCC       FutureWindows.TFutureWindowObserver.CallCallbacksForWindow
+ 0001:00231E28       FutureWindows.TFutureWindowObserver.Create
+ 0001:00231E98       FutureWindows.TFutureWindowObserver.Destroy
+ 0001:00231EE8       FutureWindows.TFutureWindowObserver.Finalize
+ 0001:00231EFC       FutureWindows.TFutureWindowObserver.GetInstance
+ 0001:00231F28       FutureWindows.TFutureWindowObserver.RegisterCallback
+ 0001:00232060       FutureWindows.TFutureWindowObserver.StartTimer
+ 0001:0023209C       FutureWindows.TFutureWindowObserver.StopTimer
+ 0001:002320D0       FutureWindows.TFutureWindowObserver.UnRegisterCallback
+ 0001:00232120       FutureWindows.TFutureWindowObserver.WndProc
+ 0001:00232168       FutureWindows.TFutureWindow.CheckWindow
+ 0001:002323A4       FutureWindows.TFutureWindow.Create
+ 0001:00232410       FutureWindows.TFutureWindow.Destroy
+ 0001:00232460       FutureWindows.TFutureWindow.GetDesciption
+ 0001:00232480       FutureWindows.TFutureWindow.StartWaiting
+ 0001:002324CC       FutureWindows.TFutureWindow.TimedOut
+ 0001:002324E8       FutureWindows.TFutureWindow.WindowFound
+ 0001:00232504       FutureWindows.TSendKeyAction.Create
+ 0001:0023254C       FutureWindows.TSendKeyAction.Execute
+ 0001:0023258C       FutureWindows.TCloseWindowAction.Execute
+ 0001:002325B0       FutureWindows.TPauseAction.Create
+ 0001:00232700       FutureWindows.TPauseAction.Execute
+ 0001:00232770       FutureWindows.TWindow.BringToFront
+ 0001:00232788       FutureWindows.TWindow.Create
+ 0001:002327CC       FutureWindows.TWindow.Destroy
+ 0001:00232808       FutureWindows.TWindow.GetAsControl
+ 0001:00232850       FutureWindows.TWindow.GetHandle
+ 0001:0023286C       FutureWindows.TWindow.GetHeight
+ 0001:00232890       FutureWindows.TWindow.GetParent
+ 0001:00232910       FutureWindows.TWindow.GetProcessId
+ 0001:00232934       FutureWindows.TWindow.GetRect
+ 0001:0023296C       FutureWindows.TWindow.GetText
+ 0001:002329B8       FutureWindows.TWindow.GetTextLen
+ 0001:002329DC       FutureWindows.TWindow.GetThreadId
+ 0001:00232A00       FutureWindows.TWindow.GetWidth
+ 0001:00232A24       FutureWindows.TWindow.GetWindowClass
+ 0001:00232A7C       FutureWindows.TWindow.InitThreadIdAndProcessId
+ 0001:00232AA8       FutureWindows.TWindow.IsEnabled
+ 0001:00232AD0       FutureWindows.TWindow.IsUnicode
+ 0001:00232AF8       FutureWindows.TWindow.IsVisible
+ 0001:00232B20       FutureWindows.TWindow.IsWindowValid
+ 0001:00232B48       FutureWindows.TWindow.PostMessage
+ 0001:00232BB0       FutureWindows.TWindow.SendMessage
+ 0001:00232C0C       FutureWindows.TWindow.SetHeight
+ 0001:00232C34       FutureWindows.TWindow.SetText
+ 0001:00232C5C       FutureWindows.TWindow.SetWidth
+ 0001:00232C84       FutureWindows.TWindow.SetWindowSize
+ 0001:00232CB4       FutureWindows.TWindowCallbackList.Add
+ 0001:00232D08       FutureWindows.TWindowCallbackList.Clear
+ 0001:00232D3C       FutureWindows.TWindowCallbackList.Create
+ 0001:00232D88       FutureWindows.TWindowCallbackList.Delete
+ 0001:00232DC0       FutureWindows.TWindowCallbackList.Destroy
+ 0001:00232E04       FutureWindows.TWindowCallbackList.Find
+ 0001:00232E7C       FutureWindows.TWindowCallbackList.GetCount
+ 0001:00232E98       FutureWindows.TWindowCallbackList.GetItem
+ 0001:00232EC8       FutureWindows.TWindowCallbackList.Has
+ 0001:00232EF0       FutureWindows.TWindowCallbackList.Remove
+ 0001:00232F20       FutureWindows.TWindowActionProcAction.Create
+ 0001:00232F68       FutureWindows.TWindowActionProcAction.Execute
+ 0001:00232F88       FutureWindows.TWindowActions.CreateCloseWindowAction
+ 0001:00232FB8       FutureWindows.TWindowActions.CreatePauseAction
+ 0001:00232FF4       FutureWindows.TWindowActions.CreateProcAction
+ 0001:00233028       FutureWindows.TWindowActions.CreateSendKeyAction
+ 0001:00233060       FutureWindows.Finalization
+ 0001:0023313C       uModel..TModel
+ 0001:002332E0       uModel..TStudent
+ 0001:0023347C       uModel..TCourse
+ 0001:00233580       uModel.TStudent.GetDateOfBirth
+ 0001:002335A0       uModel.TStudent.GetEmail
+ 0001:002335C0       uModel.TStudent.GetName
+ 0001:002335E0       uModel.TStudent.SetDateOfBirth
+ 0001:002335FC       uModel.TStudent.SetEmail
+ 0001:0023361C       uModel.TStudent.SetName
+ 0001:0023363C       uModel.TModel.CreateCourse
+ 0001:0023366C       uModel.TModel.CreateStudent
+ 0001:0023369C       uModel.TCourse.AddStudent
+ 0001:002337C8       uModel.TCourse.Create
+ 0001:0023382C       uModel.TCourse.GetName
+ 0001:0023384C       uModel.TCourse.GetStudent
+ 0001:002338C4       uModel.TCourse.GetStudentsCount
+ 0001:002338E4       uModel.TCourse.HasStudent
+ 0001:00233908       uModel.TCourse.IndexOfStudent
+ 0001:0023392C       uModel.TCourse.RemoveStudent
+ 0001:00233A40       uModel.TCourse.SetName
+ 0001:00233A60       uStudentEditDialog..EValidationError
+ 0001:00233B14       uStudentEditDialog..TStudentEditDialog
+ 0001:00233F20       uStudentEditDialog.TStudentEditDialog.Edit
+ 0001:00233FA4       uStudentEditDialog.TStudentEditDialog.FormCloseQuery
+ 0001:00233FCC       uStudentEditDialog.TStudentEditDialog.InitView
+ 0001:002340A0       uStudentEditDialog.TStudentEditDialog.UpdateModel
+ 0001:0023414C       uStudentEditDialog.TStudentEditDialog.ValidateView
+ 0001:0023430C       uMainForm..TMainForm
+ 0001:00234AB4       uMainForm.TMainForm.acDeleteStudentExecute
+ 0001:00234C48       uMainForm.TMainForm.acDeleteStudentUpdate
+ 0001:00234CB0       uMainForm.TMainForm.acEditStudentExecute
+ 0001:00234CC8       uMainForm.TMainForm.acEditStudentUpdate
+ 0001:00234D30       uMainForm.TMainForm.acNewStudentExecute
+ 0001:00234DA8       uMainForm.TMainForm.Confirm
+ 0001:00234E20       uMainForm.TMainForm.EditCurrentStudent
+ 0001:00234E88       uMainForm.TMainForm.EditStudent
+ 0001:00234EAC       uMainForm.TMainForm.FormCreate
+ 0001:00234F0C       uMainForm.TMainForm.GetCurrentStudent
+ 0001:00234F38       uMainForm.TMainForm.ListItemToStudent
+ 0001:00234F78       uMainForm.TMainForm.lvStudentsData
+ 0001:0023507C       uMainForm.TMainForm.lvStudentsDblClick
+ 0001:00235094       uMainForm.TMainForm.lvStudentsEditing
+ 0001:002350B0       uMainForm.TMainForm.UpdateStudentView
+ 0001:002350F8       uMainForm.TMainForm.SetCurrentStudent
+ 0001:0023515C       uMainForm.TMainForm.UpdateView
+ 0001:002351E8       TestCaseBase..TTestCaseBase
+ 0001:0023543C       TestCaseBase.TTestCaseBase.HandleException
+ 0001:0023546C       TestCaseBase.TTestCaseBase.ProcessMessages
+ 0001:002354D8       TestCaseBase.TTestCaseBase.TearDown
+ 0001:00235518       TestStudentEditDialog..TStudentEditDialogTestCase
+ 0001:002357E8       TestStudentEditDialog..TEditStudentFutureWindowAction
+ 0001:00235968       TestStudentEditDialog.TStudentEditDialogTestCase.TestCloseForm
+ 0001:00235A38       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro1
+ 0001:00235C5C       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro2
+ 0001:00235EC4       TestStudentEditDialog.TEditStudentFutureWindowAction.Create
+ 0001:00235F2C       TestStudentEditDialog.TEditStudentFutureWindowAction.Execute
+ 0001:002360D0       TestStudentEditDialog.Finalization
+ 0001:002360D8       TestMainForm..TMainFormTestCase
+ 0001:002365F0       TestMainForm..TMainFormTestCase.AddStudent_Slow$ActRec
+ 0001:00236724       TestMainForm.TMainFormTestCase.AddStudent_Slow$ActRec.$0$Body
+ 0001:002367B4       TestMainForm.TMainFormTestCase.AddStudent_Slow
+ 0001:00236970       TestMainForm..TMainFormTestCase.AddStudent_Fast$ActRec
+ 0001:00236AA4       TestMainForm.TMainFormTestCase.AddStudent_Fast$ActRec.$0$Body
+ 0001:00236B2C       TestMainForm.TMainFormTestCase.AddStudent_Fast
+ 0001:00236C34       TestMainForm.TMainFormTestCase.AddStudents_Slow
+ 0001:00236D7C       TestMainForm.TMainFormTestCase.AddStudents_Fast
+ 0001:00236EC4       TestMainForm.TMainFormTestCase.ExecuteMainFormAction
+ 0001:00236F70       TestMainForm.TMainFormTestCase.SetUp
+ 0001:00236FCC       TestMainForm.TMainFormTestCase.TearDown
+ 0001:00236FF8       TestMainForm.TMainFormTestCase.TestAddManyStudents_Slow
+ 0001:0023706C       TestMainForm.TMainFormTestCase.TestAddManyStudents_Fast
+ 0001:002370E0       TestMainForm.TMainFormTestCase.TestAddNewStudent
+ 0001:00237204       TestMainForm.TMainFormTestCase.TestDeleteOneStudent
+ 0001:0023739C       TestMainForm.TMainFormTestCase.TestDeleteStudents
+ 0001:002376BC       TestMainForm..TMainFormTestCase.TestValidation_NameEmpty$ActRec
+ 0001:002377D8       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$0$Body
+ 0001:002378AC       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$1$Body
+ 0001:00237914       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty
+ 0001:00237C38       TestMainForm..TMainFormTestCase.TestValidation_EmailEmpty$ActRec
+ 0001:00237D54       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$0$Body
+ 0001:00237E28       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$1$Body
+ 0001:00237E90       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty
+ 0001:00238040       TestMainForm.Finalization
+ 0001:00238048       TestFutureWindows.Finalization
+ 0001:00238050       DemoTests.Finalization
  0002:00000000       System.System
  0002:000000E0       SysInit.SysInit
  0002:000000E8       Winapi.Windows.Winapi.Windows
@@ -31130,7 +31130,7 @@ Detailed map of segments
  0003:00004CC8       TestFramework.EmptyTestList
  0003:00004CCC       TestFramework.__TestRegistry
  0003:00004CD0       Vcl.Buttons.BitBtnCaptions
- 0004:FFDB7000       SysInit.__ImageBase
+ 0004:FFDB8000       SysInit.__ImageBase
  0004:00000000       System.TMonitor.CacheLineSize
  0004:00000004       System.TMonitor.FDefaultSpinCount
  0004:00000008       System.DispCallByIDProc
@@ -31598,89 +31598,89 @@ Line numbers for FutureWindows(FutureWindows.pas) segment .text
    412 0001:00231814   413 0001:00231833   418 0001:00231858   419 0001:0023187A
    420 0001:00231894   422 0001:002318B4   423 0001:002318C2   424 0001:002318DA
    423 0001:002318F6   426 0001:0023190A   427 0001:00231913   430 0001:0023192E
-   433 0001:00231939   435 0001:00231949   438 0001:00231A70   439 0001:00231A93
-   440 0001:00231AB4   443 0001:00231AE8   444 0001:00231AF1   445 0001:00231AFA
-   447 0001:00231B01   448 0001:00231B0F   451 0001:00231B18   452 0001:00231B27
-   453 0001:00231B35   454 0001:00231B47   457 0001:00231B4C   458 0001:00231B6B
-   459 0001:00231B83   474 0001:00231BA4   475 0001:00231BBD   476 0001:00231BCD
-   477 0001:00231BD3   479 0001:00231BFA   480 0001:00231C08   481 0001:00231C0C
-   487 0001:00231C34   488 0001:00231C62   492 0001:00231C82   493 0001:00231C89
-   494 0001:00231C97   495 0001:00231CA0   496 0001:00231CBD   497 0001:00231CCB
-   498 0001:00231CD9   500 0001:00231CF1   501 0001:00231D0F   502 0001:00231D1A
-   498 0001:00231D1D   504 0001:00231D2F   507 0001:00231D4C   510 0001:00231D5B
-   511 0001:00231D76   510 0001:00231D98   512 0001:00231D9D   513 0001:00231DA8
-   519 0001:00231DF0   520 0001:00231DFC   522 0001:00231E10   523 0001:00231E21
-   524 0001:00231E36   525 0001:00231E3F   520 0001:00231E42   526 0001:00231E48
-   529 0001:00231E4C   530 0001:00231E64   531 0001:00231E6E   532 0001:00231E79
-   533 0001:00231E8B   534 0001:00231E9D   537 0001:00231EBC   538 0001:00231ECD
-   539 0001:00231ED5   540 0001:00231EE0   541 0001:00231EEB   542 0001:00231EF9
-   545 0001:00231F0C   546 0001:00231F13   547 0001:00231F1D   550 0001:00231F20
-   551 0001:00231F24   552 0001:00231F2D   553 0001:00231F3E   554 0001:00231F46
-   557 0001:00231F4C   559 0001:00231F53   560 0001:00231F7C   561 0001:00231F8D
-   562 0001:00231F9B   563 0001:00231FA3   566 0001:002320A8   567 0001:002320AF
-   570 0001:002320B8   571 0001:002320CC   573 0001:002320DE   576 0001:002320E4
-   577 0001:002320EB   580 0001:002320F4   581 0001:00232102   582 0001:0023210D
-   584 0001:00232115   587 0001:00232118   589 0001:0023211F   590 0001:00232128
-   593 0001:0023213B   594 0001:0023214C   595 0001:0023215B   597 0001:00232163
-   600 0001:00232168   601 0001:00232174   603 0001:00232180   605 0001:0023218A
-   607 0001:002321AA   611 0001:002321B0   612 0001:002321D2   613 0001:002321EF
-   615 0001:0023220C   618 0001:00232257   619 0001:00232260   621 0001:002322A8
-   622 0001:002322BA   624 0001:002322CD   625 0001:002322D6   626 0001:002322E1
-   630 0001:00232410   631 0001:0023242B   632 0001:00232435   633 0001:0023243E
-   634 0001:0023244C   635 0001:0023245B   638 0001:0023247C   640 0001:0023248D
-   644 0001:002324A0   646 0001:002324AB   647 0001:002324B9   650 0001:002324CC
-   651 0001:002324D8   652 0001:002324E6   655 0001:002324EC   656 0001:002324F8
-   659 0001:00232501   660 0001:0023250C   662 0001:0023251F   663 0001:00232531
-   666 0001:00232538   667 0001:00232541   668 0001:0023254A   671 0001:00232554
-   672 0001:0023255D   673 0001:00232566   677 0001:00232570   678 0001:0023258C
-   679 0001:00232597   682 0001:002325B8   683 0001:002325C5   684 0001:002325DB
-   685 0001:002325F1   689 0001:002325F8   690 0001:00232605   691 0001:00232616
-   695 0001:0023261C   696 0001:00232634   697 0001:0023264F   698 0001:0023265E
-   699 0001:0023266D   704 0001:00232790   705 0001:0023279D   706 0001:002327AB
-   709 0001:002327B6   710 0001:002327BE   711 0001:002327D5   713 0001:002327DD
-   714 0001:002327E6   711 0001:002327EE   717 0001:002327F6   722 0001:00232800
-   723 0001:00232807   724 0001:00232813   727 0001:00232818   728 0001:00232833
-   729 0001:0023283C   732 0001:0023285C   733 0001:0023286D   734 0001:00232878
-   735 0001:00232886   738 0001:00232898   739 0001:002328A1   741 0001:002328AA
-   742 0001:002328BA   744 0001:002328CD   745 0001:002328D8   748 0001:002328E0
-   749 0001:002328E9   750 0001:002328F2   755 0001:002328FC   756 0001:00232905
-   757 0001:00232910   758 0001:00232919   761 0001:00232920   762 0001:0023293F
-   763 0001:00232948   764 0001:00232971   765 0001:0023297F   768 0001:002329A0
-   769 0001:002329A9   770 0001:002329B1   771 0001:002329BA   774 0001:002329C4
-   775 0001:002329D0   776 0001:002329E4   777 0001:002329F5   782 0001:002329FC
-   783 0001:00232A08   784 0001:00232A13   785 0001:00232A20   786 0001:00232A26
-   787 0001:00232A42   790 0001:00232A48   791 0001:00232A51   792 0001:00232A65
-   795 0001:00232A6C   796 0001:00232A75   797 0001:00232A7D   798 0001:00232A86
-   803 0001:00232A90   804 0001:00232A99   805 0001:00232AA4   806 0001:00232AAD
-   811 0001:00232AB4   812 0001:00232AC3   814 0001:00232ACC   815 0001:00232AE4
-   817 0001:00232AFA   818 0001:00232B08   821 0001:00232B0C   822 0001:00232B13
-   823 0001:00232B1C   824 0001:00232B35   827 0001:00232B38   828 0001:00232B41
-   829 0001:00232B56   832 0001:00232B60   833 0001:00232B69   834 0001:00232B7E
-   837 0001:00232B88   838 0001:00232B91   839 0001:00232BA6   842 0001:00232BB0
-   843 0001:00232BB9   844 0001:00232BCE   848 0001:00232BD8   849 0001:00232BE7
-   850 0001:00232BF3   852 0001:00232C16   853 0001:00232C37   857 0001:00232C40
-   858 0001:00232C4F   859 0001:00232C5B   861 0001:00232C78   862 0001:00232C93
-   865 0001:00232C9C   866 0001:00232CA8   867 0001:00232CBD   870 0001:00232CC4
-   871 0001:00232CD0   872 0001:00232CE8   875 0001:00232CEC   876 0001:00232CF8
-   877 0001:00232D0D   880 0001:00232D14   881 0001:00232D23   887 0001:00232D3F
-   894 0001:00232D44   895 0001:00232D4D   896 0001:00232D56   898 0001:00232D68
-   899 0001:00232D75   900 0001:00232D83   901 0001:00232D91   906 0001:00232D98
-   907 0001:00232DA1   908 0001:00232DAC   910 0001:00232DB2   911 0001:00232DB5
-   908 0001:00232DC0   913 0001:00232DC6   916 0001:00232DCC   917 0001:00232DE4
-   918 0001:00232DF6   923 0001:00232E18   924 0001:00232E24   925 0001:00232E35
-   926 0001:00232E3D   927 0001:00232E4B   930 0001:00232E50   931 0001:00232E61
-   932 0001:00232E69   933 0001:00232E74   934 0001:00232E82   941 0001:00232E94
-   942 0001:00232EA0   943 0001:00232EA7   946 0001:00232EB5   947 0001:00232EC8
-   948 0001:00232EDC   949 0001:00232EE2   944 0001:00232EE7   951 0001:00232EF6
-   952 0001:00232EFF   953 0001:00232F03   956 0001:00232F0C   957 0001:00232F15
-   958 0001:00232F21   961 0001:00232F28   962 0001:00232F37   963 0001:00232F52
-   968 0001:00232F58   969 0001:00232F61   970 0001:00232F75   975 0001:00232F80
-   976 0001:00232F89   977 0001:00232F9E   978 0001:00232FA9   983 0001:00232FB0
-   984 0001:00232FCB   985 0001:00232FD9   988 0001:00232FF8   989 0001:00233004
-   990 0001:00233012   995 0001:00233018   996 0001:00233024   997 0001:00233041
-  1001 0001:00233048  1002 0001:00233054  1003 0001:0023307D  1007 0001:00233084
-  1008 0001:00233093  1009 0001:002330B3  1012 0001:002330B8  1013 0001:002330C8
-  1014 0001:002330E9  1018 0001:002330F0  1019 0001:00233105
+   433 0001:00231939   435 0001:00231949   438 0001:00231A4C   439 0001:00231A6F
+   440 0001:00231A90   443 0001:00231AC4   444 0001:00231ACD   445 0001:00231AD6
+   447 0001:00231ADD   448 0001:00231AEB   451 0001:00231AF4   452 0001:00231B03
+   453 0001:00231B11   454 0001:00231B23   457 0001:00231B28   458 0001:00231B47
+   459 0001:00231B5F   474 0001:00231B80   475 0001:00231B99   476 0001:00231BA9
+   477 0001:00231BAF   479 0001:00231BD6   480 0001:00231BE4   481 0001:00231BE8
+   487 0001:00231C10   488 0001:00231C3E   492 0001:00231C5E   493 0001:00231C65
+   494 0001:00231C73   495 0001:00231C7C   496 0001:00231C99   497 0001:00231CA7
+   498 0001:00231CB5   500 0001:00231CCD   501 0001:00231CEB   502 0001:00231CF6
+   498 0001:00231CF9   504 0001:00231D0B   507 0001:00231D28   510 0001:00231D37
+   511 0001:00231D52   510 0001:00231D74   512 0001:00231D79   513 0001:00231D84
+   519 0001:00231DCC   520 0001:00231DD8   522 0001:00231DEC   523 0001:00231DFD
+   524 0001:00231E12   525 0001:00231E1B   520 0001:00231E1E   526 0001:00231E24
+   529 0001:00231E28   530 0001:00231E40   531 0001:00231E4A   532 0001:00231E55
+   533 0001:00231E67   534 0001:00231E79   537 0001:00231E98   538 0001:00231EA9
+   539 0001:00231EB1   540 0001:00231EBC   541 0001:00231EC7   542 0001:00231ED5
+   545 0001:00231EE8   546 0001:00231EEF   547 0001:00231EF9   550 0001:00231EFC
+   551 0001:00231F00   552 0001:00231F09   553 0001:00231F1A   554 0001:00231F22
+   557 0001:00231F28   559 0001:00231F2F   560 0001:00231F58   561 0001:00231F69
+   562 0001:00231F77   563 0001:00231F7F   566 0001:00232060   567 0001:00232067
+   570 0001:00232070   571 0001:00232084   573 0001:00232096   576 0001:0023209C
+   577 0001:002320A3   580 0001:002320AC   581 0001:002320BA   582 0001:002320C5
+   584 0001:002320CD   587 0001:002320D0   589 0001:002320D7   590 0001:002320E0
+   593 0001:002320F3   594 0001:00232104   595 0001:00232113   597 0001:0023211B
+   600 0001:00232120   601 0001:0023212C   603 0001:00232138   605 0001:00232142
+   607 0001:00232162   611 0001:00232168   612 0001:0023218A   613 0001:002321A7
+   615 0001:002321C4   618 0001:0023220F   619 0001:00232218   621 0001:00232260
+   622 0001:00232272   624 0001:00232285   625 0001:0023228E   626 0001:00232299
+   630 0001:002323A4   631 0001:002323BF   632 0001:002323C9   633 0001:002323D2
+   634 0001:002323E0   635 0001:002323EF   638 0001:00232410   640 0001:00232421
+   644 0001:00232434   646 0001:0023243F   647 0001:0023244D   650 0001:00232460
+   651 0001:0023246C   652 0001:0023247A   655 0001:00232480   656 0001:0023248C
+   659 0001:00232495   660 0001:002324A0   662 0001:002324B3   663 0001:002324C5
+   666 0001:002324CC   667 0001:002324D5   668 0001:002324DE   671 0001:002324E8
+   672 0001:002324F1   673 0001:002324FA   677 0001:00232504   678 0001:00232520
+   679 0001:0023252B   682 0001:0023254C   683 0001:00232559   684 0001:0023256F
+   685 0001:00232585   689 0001:0023258C   690 0001:00232599   691 0001:002325AA
+   695 0001:002325B0   696 0001:002325C8   697 0001:002325E3   698 0001:002325F2
+   699 0001:00232601   704 0001:00232700   705 0001:0023270D   706 0001:0023271B
+   709 0001:00232726   710 0001:0023272E   711 0001:00232745   713 0001:0023274D
+   714 0001:00232756   711 0001:0023275E   717 0001:00232766   722 0001:00232770
+   723 0001:00232777   724 0001:00232783   727 0001:00232788   728 0001:002327A3
+   729 0001:002327AC   732 0001:002327CC   733 0001:002327DD   734 0001:002327E8
+   735 0001:002327F6   738 0001:00232808   739 0001:00232811   741 0001:0023281A
+   742 0001:0023282A   744 0001:0023283D   745 0001:00232848   748 0001:00232850
+   749 0001:00232859   750 0001:00232862   755 0001:0023286C   756 0001:00232875
+   757 0001:00232880   758 0001:00232889   761 0001:00232890   762 0001:002328AF
+   763 0001:002328B8   764 0001:002328E1   765 0001:002328EF   768 0001:00232910
+   769 0001:00232919   770 0001:00232921   771 0001:0023292A   774 0001:00232934
+   775 0001:00232940   776 0001:00232954   777 0001:00232965   782 0001:0023296C
+   783 0001:00232978   784 0001:00232983   785 0001:00232990   786 0001:00232996
+   787 0001:002329B2   790 0001:002329B8   791 0001:002329C1   792 0001:002329D5
+   795 0001:002329DC   796 0001:002329E5   797 0001:002329ED   798 0001:002329F6
+   803 0001:00232A00   804 0001:00232A09   805 0001:00232A14   806 0001:00232A1D
+   811 0001:00232A24   812 0001:00232A33   814 0001:00232A3C   815 0001:00232A54
+   817 0001:00232A6A   818 0001:00232A78   821 0001:00232A7C   822 0001:00232A83
+   823 0001:00232A8C   824 0001:00232AA5   827 0001:00232AA8   828 0001:00232AB1
+   829 0001:00232AC6   832 0001:00232AD0   833 0001:00232AD9   834 0001:00232AEE
+   837 0001:00232AF8   838 0001:00232B01   839 0001:00232B16   842 0001:00232B20
+   843 0001:00232B29   844 0001:00232B3E   848 0001:00232B48   849 0001:00232B57
+   850 0001:00232B63   852 0001:00232B86   853 0001:00232BA7   857 0001:00232BB0
+   858 0001:00232BBF   859 0001:00232BCB   861 0001:00232BE8   862 0001:00232C03
+   865 0001:00232C0C   866 0001:00232C18   867 0001:00232C2D   870 0001:00232C34
+   871 0001:00232C40   872 0001:00232C58   875 0001:00232C5C   876 0001:00232C68
+   877 0001:00232C7D   880 0001:00232C84   881 0001:00232C93   887 0001:00232CAF
+   894 0001:00232CB4   895 0001:00232CBD   896 0001:00232CC6   898 0001:00232CD8
+   899 0001:00232CE5   900 0001:00232CF3   901 0001:00232D01   906 0001:00232D08
+   907 0001:00232D11   908 0001:00232D1C   910 0001:00232D22   911 0001:00232D25
+   908 0001:00232D30   913 0001:00232D36   916 0001:00232D3C   917 0001:00232D54
+   918 0001:00232D66   923 0001:00232D88   924 0001:00232D94   925 0001:00232DA5
+   926 0001:00232DAD   927 0001:00232DBB   930 0001:00232DC0   931 0001:00232DD1
+   932 0001:00232DD9   933 0001:00232DE4   934 0001:00232DF2   941 0001:00232E04
+   942 0001:00232E10   943 0001:00232E17   946 0001:00232E25   947 0001:00232E38
+   948 0001:00232E4C   949 0001:00232E52   944 0001:00232E57   951 0001:00232E66
+   952 0001:00232E6F   953 0001:00232E73   956 0001:00232E7C   957 0001:00232E85
+   958 0001:00232E91   961 0001:00232E98   962 0001:00232EA7   963 0001:00232EC2
+   968 0001:00232EC8   969 0001:00232ED1   970 0001:00232EE5   975 0001:00232EF0
+   976 0001:00232EF9   977 0001:00232F0E   978 0001:00232F19   983 0001:00232F20
+   984 0001:00232F3B   985 0001:00232F49   988 0001:00232F68   989 0001:00232F74
+   990 0001:00232F82   995 0001:00232F88   996 0001:00232F94   997 0001:00232FB1
+  1001 0001:00232FB8  1002 0001:00232FC4  1003 0001:00232FED  1007 0001:00232FF4
+  1008 0001:00233003  1009 0001:00233023  1012 0001:00233028  1013 0001:00233038
+  1014 0001:00233059  1018 0001:00233060  1019 0001:00233075
 
 Line numbers for FutureWindows(FutureWindows.pas) segment .itext
 
@@ -31688,78 +31688,78 @@ Line numbers for FutureWindows(FutureWindows.pas) segment .itext
 
 Line numbers for uModel(uModel.pas) segment .text
 
-    79 0001:00233610    80 0001:00233619    81 0001:00233628    84 0001:00233630
-    85 0001:0023363C    86 0001:0023364A    89 0001:00233650    90 0001:0023365C
-    91 0001:0023366A    94 0001:00233670    95 0001:00233677    96 0001:00233686
-    99 0001:0023368C   100 0001:00233698   101 0001:002336A6   104 0001:002336AC
-   105 0001:002336B8   106 0001:002336C6   110 0001:002336CC   111 0001:002336D8
-   112 0001:002336F5   115 0001:002336FC   116 0001:00233708   117 0001:00233725
-   122 0001:0023372C   123 0001:00233738   124 0001:00233752   125 0001:00233775
-   126 0001:00233783   129 0001:0023388C   130 0001:002338A4   131 0001:002338AE
-   132 0001:002338CE   135 0001:002338F0   136 0001:002338FC   137 0001:0023390A
-   140 0001:00233910   141 0001:00233933   142 0001:00233954   145 0001:00233988
-   146 0001:00233991   147 0001:0023399F   150 0001:002339A8   151 0001:002339B4
-   152 0001:002339C4   155 0001:002339CC   156 0001:002339D8   157 0001:002339E9
-   160 0001:002339F0   161 0001:002339FC   162 0001:00233A1F   163 0001:00233A2D
-   166 0001:00233B38   167 0001:00233B44   168 0001:00233B52   170 0001:00233B5D
+    79 0001:00233580    80 0001:00233589    81 0001:00233598    84 0001:002335A0
+    85 0001:002335AC    86 0001:002335BA    89 0001:002335C0    90 0001:002335CC
+    91 0001:002335DA    94 0001:002335E0    95 0001:002335E7    96 0001:002335F6
+    99 0001:002335FC   100 0001:00233608   101 0001:00233616   104 0001:0023361C
+   105 0001:00233628   106 0001:00233636   110 0001:0023363C   111 0001:00233648
+   112 0001:00233665   115 0001:0023366C   116 0001:00233678   117 0001:00233695
+   122 0001:0023369C   123 0001:002336A8   124 0001:002336C2   125 0001:002336E5
+   126 0001:002336F3   129 0001:002337C8   130 0001:002337E0   131 0001:002337EA
+   132 0001:0023380A   135 0001:0023382C   136 0001:00233838   137 0001:00233846
+   140 0001:0023384C   141 0001:0023386F   142 0001:00233890   145 0001:002338C4
+   146 0001:002338CD   147 0001:002338DB   150 0001:002338E4   151 0001:002338F0
+   152 0001:00233900   155 0001:00233908   156 0001:00233914   157 0001:00233925
+   160 0001:0023392C   161 0001:00233938   162 0001:0023395B   163 0001:00233969
+   166 0001:00233A40   167 0001:00233A4C   168 0001:00233A5A   170 0001:00233A65
 
 Line numbers for uStudentEditDialog(uStudentEditDialog.pas) segment .text
 
-    40 0001:00234018    41 0001:00234024    42 0001:0023403B    43 0001:00234049
-    44 0001:00234054    45 0001:00234064    46 0001:0023406A    48 0001:00234082
-    50 0001:00234092    54 0001:0023409C    55 0001:002340AB    56 0001:002340B7
-    57 0001:002340BF    60 0001:002340C4    61 0001:002340E6    62 0001:00234102
-    63 0001:0023411E    64 0001:0023413B    65 0001:00234158    66 0001:00234172
-    69 0001:00234198    70 0001:002341BA    71 0001:002341D6    72 0001:002341F2
-    73 0001:0023421E    76 0001:00234244    77 0001:00234263    79 0001:0023427A
-    80 0001:0023428B    82 0001:002342A1    84 0001:002342B8    85 0001:002342C9
-    87 0001:002342DF    89 0001:0023430B    90 0001:0023431C    92 0001:00234332
-    94 0001:0023440B
+    40 0001:00233F20    41 0001:00233F2C    42 0001:00233F43    43 0001:00233F51
+    44 0001:00233F5C    45 0001:00233F6C    46 0001:00233F72    48 0001:00233F8A
+    50 0001:00233F9A    54 0001:00233FA4    55 0001:00233FB3    56 0001:00233FBF
+    57 0001:00233FC7    60 0001:00233FCC    61 0001:00233FEE    62 0001:0023400A
+    63 0001:00234026    64 0001:00234043    65 0001:00234060    66 0001:0023407A
+    69 0001:002340A0    70 0001:002340C2    71 0001:002340DE    72 0001:002340FA
+    73 0001:00234126    76 0001:0023414C    77 0001:0023416B    79 0001:00234182
+    80 0001:00234193    82 0001:002341A9    84 0001:002341C0    85 0001:002341D1
+    87 0001:002341E7    89 0001:00234213    90 0001:00234224    92 0001:0023423A
+    94 0001:00234313
 
 Line numbers for uMainForm(uMainForm.pas) segment .text
 
-    57 0001:00234BAC    58 0001:00234BCB    59 0001:00234BD6    60 0001:00234BF0
-    62 0001:00234C07    63 0001:00234C18    65 0001:00234C20    68 0001:00234D78
-    69 0001:00234D97    70 0001:00234DBE    73 0001:00234DE0    74 0001:00234DEC
-    75 0001:00234DF4    78 0001:00234DF8    79 0001:00234E17    80 0001:00234E3E
-    85 0001:00234E60    86 0001:00234E7F    87 0001:00234E8C    89 0001:00234E9B
-    90 0001:00234EAC    92 0001:00234EB4    95 0001:00234ED8    96 0001:00234EF7
-    97 0001:00234F2B   102 0001:00234F50   103 0001:00234F6C   104 0001:00234F77
-   106 0001:00234F7D   107 0001:00234F8C   109 0001:00234F97   112 0001:00234FB8
-   113 0001:00234FC4   114 0001:00234FD4   117 0001:00234FDC   118 0001:00234FFB
-   119 0001:00235018   122 0001:0023503C   123 0001:00235048   124 0001:00235063
-   127 0001:00235068   128 0001:00235078   129 0001:0023507E   131 0001:00235088
-   132 0001:002350A3   137 0001:002350A8   138 0001:002350D4   139 0001:002350E2
-   141 0001:002350EC   142 0001:00235102   143 0001:0023511B   145 0001:00235173
-   148 0001:002351AC   149 0001:002351B8   150 0001:002351C0   154 0001:002351C4
-   155 0001:002351D3   156 0001:002351D9   161 0001:002351E0   162 0001:002351EC
-   163 0001:00235200   165 0001:00235206   167 0001:00235222   172 0001:00235228
-   173 0001:00235234   174 0001:00235248   175 0001:0023524E   177 0001:00235260
-   178 0001:00235287   181 0001:0023528C   182 0001:00235293   183 0001:002352B7
-   185 0001:002352C1
+    57 0001:00234AB4    58 0001:00234AD3    59 0001:00234ADE    60 0001:00234AF8
+    62 0001:00234B0F    63 0001:00234B20    65 0001:00234B28    68 0001:00234C48
+    69 0001:00234C67    70 0001:00234C8E    73 0001:00234CB0    74 0001:00234CBC
+    75 0001:00234CC4    78 0001:00234CC8    79 0001:00234CE7    80 0001:00234D0E
+    85 0001:00234D30    86 0001:00234D4F    87 0001:00234D5C    89 0001:00234D6B
+    90 0001:00234D7C    92 0001:00234D84    95 0001:00234DA8    96 0001:00234DC7
+    97 0001:00234DFB   102 0001:00234E20   103 0001:00234E3C   104 0001:00234E47
+   106 0001:00234E4D   107 0001:00234E5C   109 0001:00234E67   112 0001:00234E88
+   113 0001:00234E94   114 0001:00234EA4   117 0001:00234EAC   118 0001:00234ECB
+   119 0001:00234EE8   122 0001:00234F0C   123 0001:00234F18   124 0001:00234F33
+   127 0001:00234F38   128 0001:00234F48   129 0001:00234F4E   131 0001:00234F58
+   132 0001:00234F73   137 0001:00234F78   138 0001:00234FA4   139 0001:00234FB2
+   141 0001:00234FBC   142 0001:00234FD2   143 0001:00234FEB   145 0001:00235043
+   148 0001:0023507C   149 0001:00235088   150 0001:00235090   154 0001:00235094
+   155 0001:002350A3   156 0001:002350A9   161 0001:002350B0   162 0001:002350BC
+   163 0001:002350D0   165 0001:002350D6   167 0001:002350F2   172 0001:002350F8
+   173 0001:00235104   174 0001:00235118   175 0001:0023511E   177 0001:00235130
+   178 0001:00235157   181 0001:0023515C   182 0001:00235163   183 0001:00235187
+   185 0001:00235191
 
 Line numbers for TestCaseBase(TestCaseBase.pas) segment .text
 
-    31 0001:0023556C    32 0001:0023557B    33 0001:0023558F    34 0001:00235598
-    39 0001:0023559C    40 0001:002355A5    41 0001:002355B0    44 0001:002355BE
-    45 0001:002355C6    46 0001:002355DA    48 0001:002355E2    49 0001:002355EE
-    46 0001:002355F6    52 0001:002355FE    57 0001:00235608    58 0001:00235611
-    60 0001:0023561A    61 0001:00235623    62 0001:0023562B    64 0001:00235639
-    65 0001:00235641    67 0001:0023564C
+    31 0001:0023543C    32 0001:0023544B    33 0001:0023545F    34 0001:00235468
+    39 0001:0023546C    40 0001:00235475    41 0001:00235480    44 0001:0023548E
+    45 0001:00235496    46 0001:002354AA    48 0001:002354B2    49 0001:002354BE
+    46 0001:002354C6    52 0001:002354CE    57 0001:002354D8    58 0001:002354E1
+    60 0001:002354EA    61 0001:002354F3    62 0001:002354FB    64 0001:00235509
+    65 0001:00235511    67 0001:0023551C
 
 Line numbers for TestStudentEditDialog(TestStudentEditDialog.pas) segment .text
 
-    44 0001:00235A98    45 0001:00235AB5    47 0001:00235AC2    52 0001:00235B10
-    53 0001:00235B29    63 0001:00235B68    64 0001:00235B89    66 0001:00235B9E
-    68 0001:00235BAB    69 0001:00235BCF    73 0001:00235BFF    75 0001:00235C18
-    77 0001:00235C4A    78 0001:00235C67    79 0001:00235C84    80 0001:00235CB6
-    90 0001:00235D8C    91 0001:00235DAD    93 0001:00235DC2    95 0001:00235DCF
-    96 0001:00235DF3   100 0001:00235E23   102 0001:00235E3C   104 0001:00235E6E
-   105 0001:00235E8E   106 0001:00235EAE   107 0001:00235EE0   111 0001:00235FF4
-   112 0001:0023600F   113 0001:0023601D   114 0001:0023602B   115 0001:0023603A
-   120 0001:0023605C   121 0001:00236069   122 0001:00236094   124 0001:002360AA
-   125 0001:002360BE   126 0001:002360D2   129 0001:002360E9   131 0001:002360F7
-   132 0001:00236109
+    44 0001:00235968    45 0001:00235985    47 0001:00235992    52 0001:002359E0
+    53 0001:002359F9    63 0001:00235A38    64 0001:00235A59    66 0001:00235A6E
+    68 0001:00235A7B    69 0001:00235A9F    73 0001:00235ACF    75 0001:00235AE8
+    77 0001:00235B1A    78 0001:00235B37    79 0001:00235B54    80 0001:00235B86
+    90 0001:00235C5C    91 0001:00235C7D    93 0001:00235C92    95 0001:00235C9F
+    96 0001:00235CC3   100 0001:00235CF3   102 0001:00235D0C   104 0001:00235D3E
+   105 0001:00235D5E   106 0001:00235D7E   107 0001:00235DB0   111 0001:00235EC4
+   112 0001:00235EDF   113 0001:00235EED   114 0001:00235EFB   115 0001:00235F0A
+   120 0001:00235F2C   121 0001:00235F39   122 0001:00235F64   124 0001:00235F7A
+   125 0001:00235F8E   126 0001:00235FA2   129 0001:00235FB9   131 0001:00235FC7
+   132 0001:00235FD9
 
 Line numbers for TestStudentEditDialog(TestStudentEditDialog.pas) segment .itext
 
@@ -31767,43 +31767,43 @@ Line numbers for TestStudentEditDialog(TestStudentEditDialog.pas) segment .itext
 
 Line numbers for TestMainForm(TestMainForm.pas) segment .text
 
-    51 0001:00236888    54 0001:00236895    55 0001:002368AB    56 0001:002368BF
-    57 0001:002368D3    59 0001:002368EA    61 0001:002368FE    63 0001:00236910
-    47 0001:00236918    63 0001:00236990    65 0001:002369C9    66 0001:002369E0
-    74 0001:00236C08    77 0001:00236C15    78 0001:00236C2B    79 0001:00236C3F
-    80 0001:00236C53    82 0001:00236C6A    84 0001:00236C78    86 0001:00236C8A
-    70 0001:00236C90    86 0001:00236D08    88 0001:00236D41    89 0001:00236D58
-    94 0001:00236D98    95 0001:00236DBC    97 0001:00236DD1   102 0001:00236E49
-    95 0001:00236E4C   103 0001:00236E51   108 0001:00236EE0   109 0001:00236F04
-   111 0001:00236F19   116 0001:00236F91   109 0001:00236F94   117 0001:00236F99
-   120 0001:00237028   121 0001:00237049   122 0001:00237057   123 0001:0023705F
-   124 0001:00237083   125 0001:0023708F   131 0001:002370D4   132 0001:002370DB
-   133 0001:002370E3   134 0001:00237100   135 0001:0023710E   136 0001:0023711C
-   137 0001:0023712D   140 0001:00237130   141 0001:00237137   142 0001:00237145
-   143 0001:00237150   144 0001:00237158   149 0001:0023715C   150 0001:00237164
-   152 0001:00237186   154 0001:00237193   156 0001:002371B8   158 0001:002371C9
-   163 0001:002371D0   164 0001:002371D8   166 0001:002371FA   168 0001:00237207
-   170 0001:0023722C   171 0001:0023723D   179 0001:00237244   180 0001:0023724E
-   181 0001:0023726A   183 0001:00237286   185 0001:0023729B   187 0001:002372BD
-   189 0001:002372D5   191 0001:002372FA   192 0001:0023730B   200 0001:00237368
-   201 0001:00237385   202 0001:00237392   204 0001:002373B7   207 0001:002373C1
-   209 0001:002373DA   210 0001:002373EB   212 0001:0023740F   215 0001:00237448
-   217 0001:0023745F   205 0001:00237462   220 0001:0023747E   222 0001:00237490
-   224 0001:002374A1   232 0001:00237500   233 0001:0023751D   234 0001:0023752A
-   236 0001:0023754F   239 0001:00237559   241 0001:00237572   242 0001:00237583
-   245 0001:002375A7   248 0001:002375E0   250 0001:002375F7   251 0001:002375FA
-   237 0001:0023760E   254 0001:0023762A   256 0001:0023763C   257 0001:0023764D
-   270 0001:0023793C   273 0001:0023795D   275 0001:00237974   278 0001:0023797F
-   280 0001:00237990   283 0001:002379A9   285 0001:002379BE   290 0001:00237A10
-   291 0001:00237A1D   292 0001:00237A36   295 0001:00237A49   298 0001:00237A5D
-   300 0001:00237A72   263 0001:00237A78   264 0001:00237AC1   267 0001:00237AC9
-   287 0001:00237AF7   302 0001:00237B30   303 0001:00237B4D   304 0001:00237B67
-   305 0001:00237B7B   318 0001:00237EB8   321 0001:00237ED9   323 0001:00237EF0
-   326 0001:00237EFB   328 0001:00237F0C   331 0001:00237F25   333 0001:00237F3A
-   338 0001:00237F8C   339 0001:00237F99   340 0001:00237FB2   343 0001:00237FC5
-   346 0001:00237FD9   348 0001:00237FEE   311 0001:00237FF4   312 0001:0023803D
-   315 0001:00238045   335 0001:00238073   350 0001:002380AC   351 0001:002380C9
-   352 0001:002380E3   353 0001:002380F7
+    51 0001:00236724    54 0001:00236731    55 0001:00236747    56 0001:0023675B
+    57 0001:0023676F    59 0001:00236786    61 0001:0023679A    63 0001:002367AC
+    47 0001:002367B4    63 0001:0023682C    65 0001:00236865    66 0001:0023687C
+    74 0001:00236AA4    77 0001:00236AB1    78 0001:00236AC7    79 0001:00236ADB
+    80 0001:00236AEF    82 0001:00236B06    84 0001:00236B14    86 0001:00236B26
+    70 0001:00236B2C    86 0001:00236BA4    88 0001:00236BDD    89 0001:00236BF4
+    94 0001:00236C34    95 0001:00236C58    97 0001:00236C6D   102 0001:00236CE5
+    95 0001:00236CE8   103 0001:00236CED   108 0001:00236D7C   109 0001:00236DA0
+   111 0001:00236DB5   116 0001:00236E2D   109 0001:00236E30   117 0001:00236E35
+   120 0001:00236EC4   121 0001:00236EE5   122 0001:00236EF3   123 0001:00236EFB
+   124 0001:00236F1F   125 0001:00236F2B   131 0001:00236F70   132 0001:00236F77
+   133 0001:00236F7F   134 0001:00236F9C   135 0001:00236FAA   136 0001:00236FB8
+   137 0001:00236FC9   140 0001:00236FCC   141 0001:00236FD3   142 0001:00236FE1
+   143 0001:00236FEC   144 0001:00236FF4   149 0001:00236FF8   150 0001:00237000
+   152 0001:00237022   154 0001:0023702F   156 0001:00237054   158 0001:00237065
+   163 0001:0023706C   164 0001:00237074   166 0001:00237096   168 0001:002370A3
+   170 0001:002370C8   171 0001:002370D9   179 0001:002370E0   180 0001:002370EA
+   181 0001:00237106   183 0001:00237122   185 0001:00237137   187 0001:00237159
+   189 0001:00237171   191 0001:00237196   192 0001:002371A7   200 0001:00237204
+   201 0001:00237221   202 0001:0023722E   204 0001:00237253   207 0001:0023725D
+   209 0001:00237276   210 0001:00237287   212 0001:002372AB   215 0001:002372E4
+   217 0001:002372FB   205 0001:002372FE   220 0001:0023731A   222 0001:0023732C
+   224 0001:0023733D   232 0001:0023739C   233 0001:002373B9   234 0001:002373C6
+   236 0001:002373EB   239 0001:002373F5   241 0001:0023740E   242 0001:0023741F
+   245 0001:00237443   248 0001:0023747C   250 0001:00237493   251 0001:00237496
+   237 0001:002374AA   254 0001:002374C6   256 0001:002374D8   257 0001:002374E9
+   270 0001:002377D8   273 0001:002377F9   275 0001:00237810   278 0001:0023781B
+   280 0001:0023782C   283 0001:00237845   285 0001:0023785A   290 0001:002378AC
+   291 0001:002378B9   292 0001:002378D2   295 0001:002378E5   298 0001:002378F9
+   300 0001:0023790E   263 0001:00237914   264 0001:0023795D   267 0001:00237965
+   287 0001:00237993   302 0001:002379CC   303 0001:002379E9   304 0001:00237A03
+   305 0001:00237A17   318 0001:00237D54   321 0001:00237D75   323 0001:00237D8C
+   326 0001:00237D97   328 0001:00237DA8   331 0001:00237DC1   333 0001:00237DD6
+   338 0001:00237E28   339 0001:00237E35   340 0001:00237E4E   343 0001:00237E61
+   346 0001:00237E75   348 0001:00237E8A   311 0001:00237E90   312 0001:00237ED9
+   315 0001:00237EE1   335 0001:00237F0F   350 0001:00237F48   351 0001:00237F65
+   352 0001:00237F7F   353 0001:00237F93
 
 Line numbers for TestMainForm(TestMainForm.pas) segment .itext
 

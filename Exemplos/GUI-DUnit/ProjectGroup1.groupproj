@@ -1,12 +1,12 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{7779F189-F899-47A5-9FAA-73FA2505277B}</ProjectGuid>
+        <ProjectGuid>{0932E302-0994-4D18-8E12-D1B3333150C1}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="UnitTesting\src\Demo.dproj">
+        <Projects Include="src\Demo.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="UnitTesting\test\DemoTests.dproj">
+        <Projects Include="test\DemoTests.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -18,22 +18,22 @@
         </BorlandProject>
     </ProjectExtensions>
     <Target Name="Demo">
-        <MSBuild Projects="UnitTesting\src\Demo.dproj"/>
+        <MSBuild Projects="src\Demo.dproj"/>
     </Target>
     <Target Name="Demo:Clean">
-        <MSBuild Projects="UnitTesting\src\Demo.dproj" Targets="Clean"/>
+        <MSBuild Projects="src\Demo.dproj" Targets="Clean"/>
     </Target>
     <Target Name="Demo:Make">
-        <MSBuild Projects="UnitTesting\src\Demo.dproj" Targets="Make"/>
+        <MSBuild Projects="src\Demo.dproj" Targets="Make"/>
     </Target>
     <Target Name="DemoTests">
-        <MSBuild Projects="UnitTesting\test\DemoTests.dproj"/>
+        <MSBuild Projects="test\DemoTests.dproj"/>
     </Target>
     <Target Name="DemoTests:Clean">
-        <MSBuild Projects="UnitTesting\test\DemoTests.dproj" Targets="Clean"/>
+        <MSBuild Projects="test\DemoTests.dproj" Targets="Clean"/>
     </Target>
     <Target Name="DemoTests:Make">
-        <MSBuild Projects="UnitTesting\test\DemoTests.dproj" Targets="Make"/>
+        <MSBuild Projects="test\DemoTests.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
         <CallTarget Targets="Demo;DemoTests"/>

@@ -1,6 +1,6 @@
 
  Start         Length     Name                   Class
- 0001:00401000 001F23ECH .text                   CODE
+ 0001:00401000 001F234CH .text                   CODE
  0002:005F4000 000015ECH .itext                  ICODE
  0003:005F6000 00005218H .data                   DATA
  0004:005FC000 000061B4H .bss                    BSS
@@ -78,11 +78,11 @@ Detailed map of segments
  0001:001C6294 00000040 C=CODE     S=.text    G=(none)   M=Winapi.ShellScaling ACBP=A9
  0001:001C62D4 00000388 C=CODE     S=.text    G=(none)   M=Winapi.FlatSB ACBP=A9
  0001:001C665C 00021580 C=CODE     S=.text    G=(none)   M=Vcl.Forms ACBP=A9
- 0001:001E7BDC 000009EC C=CODE     S=.text    G=(none)   M=uModel   ACBP=A9
- 0001:001E85C8 000019C4 C=CODE     S=.text    G=(none)   M=Vcl.Buttons ACBP=A9
- 0001:001E9F8C 000008AC C=CODE     S=.text    G=(none)   M=uStudentEditDialog ACBP=A9
- 0001:001EA838 00000EB8 C=CODE     S=.text    G=(none)   M=uMainForm ACBP=A9
- 0001:001EB6F0 00006CFC C=CODE     S=.text    G=(none)   M=Demo     ACBP=A9
+ 0001:001E7BDC 00000984 C=CODE     S=.text    G=(none)   M=uModel   ACBP=A9
+ 0001:001E8560 000019C4 C=CODE     S=.text    G=(none)   M=Vcl.Buttons ACBP=A9
+ 0001:001E9F24 000008AC C=CODE     S=.text    G=(none)   M=uStudentEditDialog ACBP=A9
+ 0001:001EA7D0 00000E80 C=CODE     S=.text    G=(none)   M=uMainForm ACBP=A9
+ 0001:001EB650 00006CFC C=CODE     S=.text    G=(none)   M=Demo     ACBP=A9
  0002:00000000 000000E0 C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000E0 00000008 C=ICODE    S=.itext   G=(none)   M=SysInit  ACBP=A9
  0002:000000E8 00000018 C=ICODE    S=.itext   G=(none)   M=Winapi.Windows ACBP=A9
@@ -218,7 +218,7 @@ Detailed map of segments
   Address             Publics by Name
 
  0002:00001590       Demo.Demo
- 0001:001EB6F0       Demo.Finalization
+ 0001:001EB650       Demo.Finalization
  0001:0000FB90       SysInit...
  0001:0000FB80       SysInit...
  0001:0000FB70       SysInit...
@@ -7577,37 +7577,37 @@ Detailed map of segments
  0001:001C625C       System.Win.TaskbarCore.TTaskbarHandler.DoWindowPreviewRequest
  0001:001C627C       System.Win.TaskbarCore.TTaskbarHandler.Initialize
  0001:001C6284       System.Win.TaskbarCore.TTaskbarHandler.UnregisterTab
- 0001:001EA838       uMainForm..TMainForm
+ 0001:001EA7D0       uMainForm..TMainForm
  0004:000061B0       uMainForm.MainForm
- 0001:001EAFE0       uMainForm.TMainForm.acDeleteStudentExecute
- 0001:001EB1AC       uMainForm.TMainForm.acDeleteStudentUpdate
- 0001:001EB214       uMainForm.TMainForm.acEditStudentExecute
- 0001:001EB22C       uMainForm.TMainForm.acEditStudentUpdate
- 0001:001EB294       uMainForm.TMainForm.acNewStudentExecute
- 0001:001EB30C       uMainForm.TMainForm.Confirm
- 0001:001EB384       uMainForm.TMainForm.EditCurrentStudent
- 0001:001EB3EC       uMainForm.TMainForm.EditStudent
- 0001:001EB410       uMainForm.TMainForm.FormCreate
- 0001:001EB470       uMainForm.TMainForm.GetCurrentStudent
- 0001:001EB49C       uMainForm.TMainForm.ListItemToStudent
- 0001:001EB4DC       uMainForm.TMainForm.lvStudentsData
- 0001:001EB5E0       uMainForm.TMainForm.lvStudentsDblClick
- 0001:001EB5F8       uMainForm.TMainForm.lvStudentsEditing
- 0001:001EB65C       uMainForm.TMainForm.SetCurrentStudent
- 0001:001EB614       uMainForm.TMainForm.UpdateStudentView
- 0001:001EB6C0       uMainForm.TMainForm.UpdateView
+ 0001:001EAF78       uMainForm.TMainForm.acDeleteStudentExecute
+ 0001:001EB10C       uMainForm.TMainForm.acDeleteStudentUpdate
+ 0001:001EB174       uMainForm.TMainForm.acEditStudentExecute
+ 0001:001EB18C       uMainForm.TMainForm.acEditStudentUpdate
+ 0001:001EB1F4       uMainForm.TMainForm.acNewStudentExecute
+ 0001:001EB26C       uMainForm.TMainForm.Confirm
+ 0001:001EB2E4       uMainForm.TMainForm.EditCurrentStudent
+ 0001:001EB34C       uMainForm.TMainForm.EditStudent
+ 0001:001EB370       uMainForm.TMainForm.FormCreate
+ 0001:001EB3D0       uMainForm.TMainForm.GetCurrentStudent
+ 0001:001EB3FC       uMainForm.TMainForm.ListItemToStudent
+ 0001:001EB43C       uMainForm.TMainForm.lvStudentsData
+ 0001:001EB540       uMainForm.TMainForm.lvStudentsDblClick
+ 0001:001EB558       uMainForm.TMainForm.lvStudentsEditing
+ 0001:001EB5BC       uMainForm.TMainForm.SetCurrentStudent
+ 0001:001EB574       uMainForm.TMainForm.UpdateStudentView
+ 0001:001EB620       uMainForm.TMainForm.UpdateView
  0001:001E7F7C       uModel..TCourse
  0001:001E7C3C       uModel..TModel
  0001:001E7DE0       uModel..TStudent
  0001:001E819C       uModel.TCourse.AddStudent
- 0001:001E82FC       uModel.TCourse.Create
- 0001:001E8360       uModel.TCourse.GetName
- 0001:001E8380       uModel.TCourse.GetStudent
- 0001:001E83F8       uModel.TCourse.GetStudentsCount
- 0001:001E8418       uModel.TCourse.HasStudent
- 0001:001E843C       uModel.TCourse.IndexOfStudent
- 0001:001E8460       uModel.TCourse.RemoveStudent
- 0001:001E85A8       uModel.TCourse.SetName
+ 0001:001E82C8       uModel.TCourse.Create
+ 0001:001E832C       uModel.TCourse.GetName
+ 0001:001E834C       uModel.TCourse.GetStudent
+ 0001:001E83C4       uModel.TCourse.GetStudentsCount
+ 0001:001E83E4       uModel.TCourse.HasStudent
+ 0001:001E8408       uModel.TCourse.IndexOfStudent
+ 0001:001E842C       uModel.TCourse.RemoveStudent
+ 0001:001E8540       uModel.TCourse.SetName
  0001:001E813C       uModel.TModel.CreateCourse
  0001:001E816C       uModel.TModel.CreateStudent
  0001:001E8080       uModel.TStudent.GetDateOfBirth
@@ -7616,13 +7616,13 @@ Detailed map of segments
  0001:001E80E0       uModel.TStudent.SetDateOfBirth
  0001:001E80FC       uModel.TStudent.SetEmail
  0001:001E811C       uModel.TStudent.SetName
- 0001:001E9F8C       uStudentEditDialog..EValidationError
- 0001:001EA040       uStudentEditDialog..TStudentEditDialog
- 0001:001EA44C       uStudentEditDialog.TStudentEditDialog.Edit
- 0001:001EA4D0       uStudentEditDialog.TStudentEditDialog.FormCloseQuery
- 0001:001EA4F8       uStudentEditDialog.TStudentEditDialog.InitView
- 0001:001EA5CC       uStudentEditDialog.TStudentEditDialog.UpdateModel
- 0001:001EA678       uStudentEditDialog.TStudentEditDialog.ValidateView
+ 0001:001E9F24       uStudentEditDialog..EValidationError
+ 0001:001E9FD8       uStudentEditDialog..TStudentEditDialog
+ 0001:001EA3E4       uStudentEditDialog.TStudentEditDialog.Edit
+ 0001:001EA468       uStudentEditDialog.TStudentEditDialog.FormCloseQuery
+ 0001:001EA490       uStudentEditDialog.TStudentEditDialog.InitView
+ 0001:001EA564       uStudentEditDialog.TStudentEditDialog.UpdateModel
+ 0001:001EA610       uStudentEditDialog.TStudentEditDialog.ValidateView
  0004:00005F98       Vcl.ActnList..7
  0001:00108D34       Vcl.ActnList..TAction
  0001:00108800       Vcl.ActnList..TActionLink
@@ -7651,67 +7651,67 @@ Detailed map of segments
  0001:00109348       Vcl.ActnList.TShortCutList.Add
  0002:00000EA4       Vcl.ActnList.Vcl.ActnList
  0004:00006180       Vcl.Buttons..9
- 0001:001E88B8       Vcl.Buttons..{System.Generics.Collections}TList<System.Integer>
- 0001:001E8718       Vcl.Buttons..{System.Generics.Collections}TList<System.Integer>.TEnumerator
+ 0001:001E8850       Vcl.Buttons..{System.Generics.Collections}TList<System.Integer>
+ 0001:001E86B0       Vcl.Buttons..{System.Generics.Collections}TList<System.Integer>.TEnumerator
  0003:00004A84       Vcl.Buttons.BitBtnCaptions
  0004:00006184       Vcl.Buttons.BitBtnGlyphs
- 0001:001E9568       Vcl.Buttons.DestroyLocals
- 0001:001E9600       Vcl.Buttons.Finalization
+ 0001:001E9500       Vcl.Buttons.DestroyLocals
+ 0001:001E9598       Vcl.Buttons.Finalization
  0002:00001568       Vcl.Buttons.Vcl.Buttons
- 0001:001E999C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Add
- 0001:001E99C0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
- 0001:001E99AC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
- 0001:001E99CC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
- 0001:001E9E8C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.BinarySearch
- 0001:001E9E50       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.BinarySearch
- 0001:001E9D2C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Clear
- 0001:001E9D68       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Contains
- 0001:001E9748       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
- 0001:001E96D0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
- 0001:001E97F8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
- 0001:001E9C6C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Delete
- 0001:001E9C78       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.DeleteRange
- 0001:001E98A4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Destroy
- 0001:001E96B0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.DoGetEnumerator
- 0001:001E98F0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Error
- 0001:001E9928       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Error
- 0001:001E9CE4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Exchange
- 0001:001E9D38       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Expand
- 0001:001E9CC0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Extract
- 0001:001E9C84       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.ExtractItem
- 0001:001E9CFC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.First
- 0001:001E9610       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetCapacity
- 0001:001E9EEC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetEnumerator
- 0001:001E9664       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetItem
- 0001:001E9D88       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.IndexOf
- 0001:001E9DA4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.IndexOfItem
- 0001:001E99D8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Insert
- 0001:001E9A88       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
- 0001:001E9A04       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
- 0001:001E99E8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
- 0001:001E96A0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InternalCompare
- 0001:001E9694       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InternalNotify
- 0001:001E9D10       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Last
- 0001:001E9DD4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.LastIndexOf
- 0001:001E9CF0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Move
- 0001:001E96B8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Notify
- 0001:001E9B90       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Pack
- 0001:001E9B08       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Pack
- 0001:001E9C20       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Remove
- 0001:001E9C3C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.RemoveItem
- 0001:001E9DF0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Reverse
- 0001:001E9628       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetCapacity
- 0001:001E9658       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetCount
- 0001:001E9680       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetItem
- 0001:001E9DFC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Sort
- 0001:001E9E24       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Sort
- 0001:001E9F28       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.Create
- 0001:001E9F18       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.DoGetCurrent
- 0001:001E9F20       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.DoMoveNext
- 0001:001E9EFC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.GetCurrent
- 0001:001E9F6C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.MoveNext
- 0001:001E9ED8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.ToArray
- 0001:001E9ECC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TrimExcess
+ 0001:001E9934       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Add
+ 0001:001E9958       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
+ 0001:001E9944       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
+ 0001:001E9964       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
+ 0001:001E9E24       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.BinarySearch
+ 0001:001E9DE8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.BinarySearch
+ 0001:001E9CC4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Clear
+ 0001:001E9D00       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Contains
+ 0001:001E96E0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
+ 0001:001E9668       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
+ 0001:001E9790       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
+ 0001:001E9C04       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Delete
+ 0001:001E9C10       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.DeleteRange
+ 0001:001E983C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Destroy
+ 0001:001E9648       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.DoGetEnumerator
+ 0001:001E9888       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Error
+ 0001:001E98C0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Error
+ 0001:001E9C7C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Exchange
+ 0001:001E9CD0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Expand
+ 0001:001E9C58       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Extract
+ 0001:001E9C1C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.ExtractItem
+ 0001:001E9C94       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.First
+ 0001:001E95A8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetCapacity
+ 0001:001E9E84       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetEnumerator
+ 0001:001E95FC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetItem
+ 0001:001E9D20       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.IndexOf
+ 0001:001E9D3C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.IndexOfItem
+ 0001:001E9970       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Insert
+ 0001:001E9A20       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
+ 0001:001E999C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
+ 0001:001E9980       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
+ 0001:001E9638       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InternalCompare
+ 0001:001E962C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InternalNotify
+ 0001:001E9CA8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Last
+ 0001:001E9D6C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.LastIndexOf
+ 0001:001E9C88       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Move
+ 0001:001E9650       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Notify
+ 0001:001E9B28       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Pack
+ 0001:001E9AA0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Pack
+ 0001:001E9BB8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Remove
+ 0001:001E9BD4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.RemoveItem
+ 0001:001E9D88       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Reverse
+ 0001:001E95C0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetCapacity
+ 0001:001E95F0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetCount
+ 0001:001E9618       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetItem
+ 0001:001E9D94       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Sort
+ 0001:001E9DBC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Sort
+ 0001:001E9EC0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.Create
+ 0001:001E9EB0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.DoGetCurrent
+ 0001:001E9EB8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.DoMoveNext
+ 0001:001E9E94       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.GetCurrent
+ 0001:001E9F04       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.MoveNext
+ 0001:001E9E70       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.ToArray
+ 0001:001E9E64       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TrimExcess
  0004:00006040       Vcl.Clipbrd..3
  0004:0000603E       Vcl.Clipbrd.CF_COMPONENT
  0004:0000603C       Vcl.Clipbrd.CF_PICTURE
@@ -27160,98 +27160,98 @@ Detailed map of segments
  0001:001E813C       uModel.TModel.CreateCourse
  0001:001E816C       uModel.TModel.CreateStudent
  0001:001E819C       uModel.TCourse.AddStudent
- 0001:001E82FC       uModel.TCourse.Create
- 0001:001E8360       uModel.TCourse.GetName
- 0001:001E8380       uModel.TCourse.GetStudent
- 0001:001E83F8       uModel.TCourse.GetStudentsCount
- 0001:001E8418       uModel.TCourse.HasStudent
- 0001:001E843C       uModel.TCourse.IndexOfStudent
- 0001:001E8460       uModel.TCourse.RemoveStudent
- 0001:001E85A8       uModel.TCourse.SetName
- 0001:001E8718       Vcl.Buttons..{System.Generics.Collections}TList<System.Integer>.TEnumerator
- 0001:001E88B8       Vcl.Buttons..{System.Generics.Collections}TList<System.Integer>
- 0001:001E9568       Vcl.Buttons.DestroyLocals
- 0001:001E9600       Vcl.Buttons.Finalization
- 0001:001E9610       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetCapacity
- 0001:001E9628       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetCapacity
- 0001:001E9658       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetCount
- 0001:001E9664       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetItem
- 0001:001E9680       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetItem
- 0001:001E9694       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InternalNotify
- 0001:001E96A0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InternalCompare
- 0001:001E96B0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.DoGetEnumerator
- 0001:001E96B8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Notify
- 0001:001E96D0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
- 0001:001E9748       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
- 0001:001E97F8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
- 0001:001E98A4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Destroy
- 0001:001E98F0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Error
- 0001:001E9928       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Error
- 0001:001E999C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Add
- 0001:001E99AC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
- 0001:001E99C0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
- 0001:001E99CC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
- 0001:001E99D8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Insert
- 0001:001E99E8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
- 0001:001E9A04       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
- 0001:001E9A88       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
- 0001:001E9B08       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Pack
- 0001:001E9B90       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Pack
- 0001:001E9C20       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Remove
- 0001:001E9C3C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.RemoveItem
- 0001:001E9C6C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Delete
- 0001:001E9C78       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.DeleteRange
- 0001:001E9C84       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.ExtractItem
- 0001:001E9CC0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Extract
- 0001:001E9CE4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Exchange
- 0001:001E9CF0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Move
- 0001:001E9CFC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.First
- 0001:001E9D10       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Last
- 0001:001E9D2C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Clear
- 0001:001E9D38       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Expand
- 0001:001E9D68       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Contains
- 0001:001E9D88       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.IndexOf
- 0001:001E9DA4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.IndexOfItem
- 0001:001E9DD4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.LastIndexOf
- 0001:001E9DF0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Reverse
- 0001:001E9DFC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Sort
- 0001:001E9E24       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Sort
- 0001:001E9E50       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.BinarySearch
- 0001:001E9E8C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.BinarySearch
- 0001:001E9ECC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TrimExcess
- 0001:001E9ED8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.ToArray
- 0001:001E9EEC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetEnumerator
- 0001:001E9EFC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.GetCurrent
- 0001:001E9F18       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.DoGetCurrent
- 0001:001E9F20       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.DoMoveNext
- 0001:001E9F28       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.Create
- 0001:001E9F6C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.MoveNext
- 0001:001E9F8C       uStudentEditDialog..EValidationError
- 0001:001EA040       uStudentEditDialog..TStudentEditDialog
- 0001:001EA44C       uStudentEditDialog.TStudentEditDialog.Edit
- 0001:001EA4D0       uStudentEditDialog.TStudentEditDialog.FormCloseQuery
- 0001:001EA4F8       uStudentEditDialog.TStudentEditDialog.InitView
- 0001:001EA5CC       uStudentEditDialog.TStudentEditDialog.UpdateModel
- 0001:001EA678       uStudentEditDialog.TStudentEditDialog.ValidateView
- 0001:001EA838       uMainForm..TMainForm
- 0001:001EAFE0       uMainForm.TMainForm.acDeleteStudentExecute
- 0001:001EB1AC       uMainForm.TMainForm.acDeleteStudentUpdate
- 0001:001EB214       uMainForm.TMainForm.acEditStudentExecute
- 0001:001EB22C       uMainForm.TMainForm.acEditStudentUpdate
- 0001:001EB294       uMainForm.TMainForm.acNewStudentExecute
- 0001:001EB30C       uMainForm.TMainForm.Confirm
- 0001:001EB384       uMainForm.TMainForm.EditCurrentStudent
- 0001:001EB3EC       uMainForm.TMainForm.EditStudent
- 0001:001EB410       uMainForm.TMainForm.FormCreate
- 0001:001EB470       uMainForm.TMainForm.GetCurrentStudent
- 0001:001EB49C       uMainForm.TMainForm.ListItemToStudent
- 0001:001EB4DC       uMainForm.TMainForm.lvStudentsData
- 0001:001EB5E0       uMainForm.TMainForm.lvStudentsDblClick
- 0001:001EB5F8       uMainForm.TMainForm.lvStudentsEditing
- 0001:001EB614       uMainForm.TMainForm.UpdateStudentView
- 0001:001EB65C       uMainForm.TMainForm.SetCurrentStudent
- 0001:001EB6C0       uMainForm.TMainForm.UpdateView
- 0001:001EB6F0       Demo.Finalization
+ 0001:001E82C8       uModel.TCourse.Create
+ 0001:001E832C       uModel.TCourse.GetName
+ 0001:001E834C       uModel.TCourse.GetStudent
+ 0001:001E83C4       uModel.TCourse.GetStudentsCount
+ 0001:001E83E4       uModel.TCourse.HasStudent
+ 0001:001E8408       uModel.TCourse.IndexOfStudent
+ 0001:001E842C       uModel.TCourse.RemoveStudent
+ 0001:001E8540       uModel.TCourse.SetName
+ 0001:001E86B0       Vcl.Buttons..{System.Generics.Collections}TList<System.Integer>.TEnumerator
+ 0001:001E8850       Vcl.Buttons..{System.Generics.Collections}TList<System.Integer>
+ 0001:001E9500       Vcl.Buttons.DestroyLocals
+ 0001:001E9598       Vcl.Buttons.Finalization
+ 0001:001E95A8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetCapacity
+ 0001:001E95C0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetCapacity
+ 0001:001E95F0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetCount
+ 0001:001E95FC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetItem
+ 0001:001E9618       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.SetItem
+ 0001:001E962C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InternalNotify
+ 0001:001E9638       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InternalCompare
+ 0001:001E9648       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.DoGetEnumerator
+ 0001:001E9650       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Notify
+ 0001:001E9668       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
+ 0001:001E96E0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
+ 0001:001E9790       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Create
+ 0001:001E983C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Destroy
+ 0001:001E9888       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Error
+ 0001:001E98C0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Error
+ 0001:001E9934       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Add
+ 0001:001E9944       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
+ 0001:001E9958       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
+ 0001:001E9964       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.AddRange
+ 0001:001E9970       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Insert
+ 0001:001E9980       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
+ 0001:001E999C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
+ 0001:001E9A20       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.InsertRange
+ 0001:001E9AA0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Pack
+ 0001:001E9B28       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Pack
+ 0001:001E9BB8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Remove
+ 0001:001E9BD4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.RemoveItem
+ 0001:001E9C04       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Delete
+ 0001:001E9C10       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.DeleteRange
+ 0001:001E9C1C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.ExtractItem
+ 0001:001E9C58       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Extract
+ 0001:001E9C7C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Exchange
+ 0001:001E9C88       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Move
+ 0001:001E9C94       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.First
+ 0001:001E9CA8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Last
+ 0001:001E9CC4       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Clear
+ 0001:001E9CD0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Expand
+ 0001:001E9D00       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Contains
+ 0001:001E9D20       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.IndexOf
+ 0001:001E9D3C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.IndexOfItem
+ 0001:001E9D6C       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.LastIndexOf
+ 0001:001E9D88       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Reverse
+ 0001:001E9D94       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Sort
+ 0001:001E9DBC       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.Sort
+ 0001:001E9DE8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.BinarySearch
+ 0001:001E9E24       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.BinarySearch
+ 0001:001E9E64       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TrimExcess
+ 0001:001E9E70       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.ToArray
+ 0001:001E9E84       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.GetEnumerator
+ 0001:001E9E94       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.GetCurrent
+ 0001:001E9EB0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.DoGetCurrent
+ 0001:001E9EB8       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.DoMoveNext
+ 0001:001E9EC0       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.Create
+ 0001:001E9F04       Vcl.Buttons.{System.Generics.Collections}TList<System.Integer>.TEnumerator.MoveNext
+ 0001:001E9F24       uStudentEditDialog..EValidationError
+ 0001:001E9FD8       uStudentEditDialog..TStudentEditDialog
+ 0001:001EA3E4       uStudentEditDialog.TStudentEditDialog.Edit
+ 0001:001EA468       uStudentEditDialog.TStudentEditDialog.FormCloseQuery
+ 0001:001EA490       uStudentEditDialog.TStudentEditDialog.InitView
+ 0001:001EA564       uStudentEditDialog.TStudentEditDialog.UpdateModel
+ 0001:001EA610       uStudentEditDialog.TStudentEditDialog.ValidateView
+ 0001:001EA7D0       uMainForm..TMainForm
+ 0001:001EAF78       uMainForm.TMainForm.acDeleteStudentExecute
+ 0001:001EB10C       uMainForm.TMainForm.acDeleteStudentUpdate
+ 0001:001EB174       uMainForm.TMainForm.acEditStudentExecute
+ 0001:001EB18C       uMainForm.TMainForm.acEditStudentUpdate
+ 0001:001EB1F4       uMainForm.TMainForm.acNewStudentExecute
+ 0001:001EB26C       uMainForm.TMainForm.Confirm
+ 0001:001EB2E4       uMainForm.TMainForm.EditCurrentStudent
+ 0001:001EB34C       uMainForm.TMainForm.EditStudent
+ 0001:001EB370       uMainForm.TMainForm.FormCreate
+ 0001:001EB3D0       uMainForm.TMainForm.GetCurrentStudent
+ 0001:001EB3FC       uMainForm.TMainForm.ListItemToStudent
+ 0001:001EB43C       uMainForm.TMainForm.lvStudentsData
+ 0001:001EB540       uMainForm.TMainForm.lvStudentsDblClick
+ 0001:001EB558       uMainForm.TMainForm.lvStudentsEditing
+ 0001:001EB574       uMainForm.TMainForm.UpdateStudentView
+ 0001:001EB5BC       uMainForm.TMainForm.SetCurrentStudent
+ 0001:001EB620       uMainForm.TMainForm.UpdateView
+ 0001:001EB650       Demo.Finalization
  0002:00000000       System.System
  0002:000000E0       SysInit.SysInit
  0002:000000E8       Winapi.Windows.Winapi.Windows
@@ -28224,53 +28224,53 @@ Line numbers for uModel(uModel.pas) segment .text
    105 0001:001E8128   106 0001:001E8136   110 0001:001E813C   111 0001:001E8148
    112 0001:001E8165   115 0001:001E816C   116 0001:001E8178   117 0001:001E8195
    122 0001:001E819C   123 0001:001E81A8   124 0001:001E81C2   125 0001:001E81E5
-   126 0001:001E81F3   129 0001:001E82FC   130 0001:001E8314   131 0001:001E831E
-   132 0001:001E833E   135 0001:001E8360   136 0001:001E836C   137 0001:001E837A
-   140 0001:001E8380   141 0001:001E83A3   142 0001:001E83C4   145 0001:001E83F8
-   146 0001:001E8401   147 0001:001E840F   150 0001:001E8418   151 0001:001E8424
-   152 0001:001E8434   155 0001:001E843C   156 0001:001E8448   157 0001:001E8459
-   160 0001:001E8460   161 0001:001E846C   162 0001:001E848F   163 0001:001E849D
-   166 0001:001E85A8   167 0001:001E85B4   168 0001:001E85C2   170 0001:001E85CD
+   126 0001:001E81F3   129 0001:001E82C8   130 0001:001E82E0   131 0001:001E82EA
+   132 0001:001E830A   135 0001:001E832C   136 0001:001E8338   137 0001:001E8346
+   140 0001:001E834C   141 0001:001E836F   142 0001:001E8390   145 0001:001E83C4
+   146 0001:001E83CD   147 0001:001E83DB   150 0001:001E83E4   151 0001:001E83F0
+   152 0001:001E8400   155 0001:001E8408   156 0001:001E8414   157 0001:001E8425
+   160 0001:001E842C   161 0001:001E8438   162 0001:001E845B   163 0001:001E8469
+   166 0001:001E8540   167 0001:001E854C   168 0001:001E855A   170 0001:001E8565
 
 Line numbers for uStudentEditDialog(uStudentEditDialog.pas) segment .text
 
-    40 0001:001EA44C    41 0001:001EA458    42 0001:001EA46F    43 0001:001EA47D
-    44 0001:001EA488    45 0001:001EA498    46 0001:001EA49E    48 0001:001EA4B6
-    50 0001:001EA4C6    54 0001:001EA4D0    55 0001:001EA4DF    56 0001:001EA4EB
-    57 0001:001EA4F3    60 0001:001EA4F8    61 0001:001EA51A    62 0001:001EA536
-    63 0001:001EA552    64 0001:001EA56F    65 0001:001EA58C    66 0001:001EA5A6
-    69 0001:001EA5CC    70 0001:001EA5EE    71 0001:001EA60A    72 0001:001EA626
-    73 0001:001EA652    76 0001:001EA678    77 0001:001EA697    79 0001:001EA6AE
-    80 0001:001EA6BF    82 0001:001EA6D5    84 0001:001EA6EC    85 0001:001EA6FD
-    87 0001:001EA713    89 0001:001EA73F    90 0001:001EA750    92 0001:001EA766
-    94 0001:001EA83F
+    40 0001:001EA3E4    41 0001:001EA3F0    42 0001:001EA407    43 0001:001EA415
+    44 0001:001EA420    45 0001:001EA430    46 0001:001EA436    48 0001:001EA44E
+    50 0001:001EA45E    54 0001:001EA468    55 0001:001EA477    56 0001:001EA483
+    57 0001:001EA48B    60 0001:001EA490    61 0001:001EA4B2    62 0001:001EA4CE
+    63 0001:001EA4EA    64 0001:001EA507    65 0001:001EA524    66 0001:001EA53E
+    69 0001:001EA564    70 0001:001EA586    71 0001:001EA5A2    72 0001:001EA5BE
+    73 0001:001EA5EA    76 0001:001EA610    77 0001:001EA62F    79 0001:001EA646
+    80 0001:001EA657    82 0001:001EA66D    84 0001:001EA684    85 0001:001EA695
+    87 0001:001EA6AB    89 0001:001EA6D7    90 0001:001EA6E8    92 0001:001EA6FE
+    94 0001:001EA7D7
 
 Line numbers for uMainForm(uMainForm.pas) segment .text
 
-    57 0001:001EAFE0    58 0001:001EAFFF    59 0001:001EB00A    60 0001:001EB024
-    62 0001:001EB03B    63 0001:001EB04C    65 0001:001EB054    68 0001:001EB1AC
-    69 0001:001EB1CB    70 0001:001EB1F2    73 0001:001EB214    74 0001:001EB220
-    75 0001:001EB228    78 0001:001EB22C    79 0001:001EB24B    80 0001:001EB272
-    85 0001:001EB294    86 0001:001EB2B3    87 0001:001EB2C0    89 0001:001EB2CF
-    90 0001:001EB2E0    92 0001:001EB2E8    95 0001:001EB30C    96 0001:001EB32B
-    97 0001:001EB35F   102 0001:001EB384   103 0001:001EB3A0   104 0001:001EB3AB
-   106 0001:001EB3B1   107 0001:001EB3C0   109 0001:001EB3CB   112 0001:001EB3EC
-   113 0001:001EB3F8   114 0001:001EB408   117 0001:001EB410   118 0001:001EB42F
-   119 0001:001EB44C   122 0001:001EB470   123 0001:001EB47C   124 0001:001EB497
-   127 0001:001EB49C   128 0001:001EB4AC   129 0001:001EB4B2   131 0001:001EB4BC
-   132 0001:001EB4D7   137 0001:001EB4DC   138 0001:001EB508   139 0001:001EB516
-   141 0001:001EB520   142 0001:001EB536   143 0001:001EB54F   145 0001:001EB5A7
-   148 0001:001EB5E0   149 0001:001EB5EC   150 0001:001EB5F4   154 0001:001EB5F8
-   155 0001:001EB607   156 0001:001EB60D   161 0001:001EB614   162 0001:001EB620
-   163 0001:001EB634   165 0001:001EB63A   167 0001:001EB656   172 0001:001EB65C
-   173 0001:001EB668   174 0001:001EB67C   175 0001:001EB682   177 0001:001EB694
-   178 0001:001EB6BB   181 0001:001EB6C0   182 0001:001EB6C7   183 0001:001EB6EB
-   185 0001:001EB6F5
+    57 0001:001EAF78    58 0001:001EAF97    59 0001:001EAFA2    60 0001:001EAFBC
+    62 0001:001EAFD3    63 0001:001EAFE4    65 0001:001EAFEC    68 0001:001EB10C
+    69 0001:001EB12B    70 0001:001EB152    73 0001:001EB174    74 0001:001EB180
+    75 0001:001EB188    78 0001:001EB18C    79 0001:001EB1AB    80 0001:001EB1D2
+    85 0001:001EB1F4    86 0001:001EB213    87 0001:001EB220    89 0001:001EB22F
+    90 0001:001EB240    92 0001:001EB248    95 0001:001EB26C    96 0001:001EB28B
+    97 0001:001EB2BF   102 0001:001EB2E4   103 0001:001EB300   104 0001:001EB30B
+   106 0001:001EB311   107 0001:001EB320   109 0001:001EB32B   112 0001:001EB34C
+   113 0001:001EB358   114 0001:001EB368   117 0001:001EB370   118 0001:001EB38F
+   119 0001:001EB3AC   122 0001:001EB3D0   123 0001:001EB3DC   124 0001:001EB3F7
+   127 0001:001EB3FC   128 0001:001EB40C   129 0001:001EB412   131 0001:001EB41C
+   132 0001:001EB437   137 0001:001EB43C   138 0001:001EB468   139 0001:001EB476
+   141 0001:001EB480   142 0001:001EB496   143 0001:001EB4AF   145 0001:001EB507
+   148 0001:001EB540   149 0001:001EB54C   150 0001:001EB554   154 0001:001EB558
+   155 0001:001EB567   156 0001:001EB56D   161 0001:001EB574   162 0001:001EB580
+   163 0001:001EB594   165 0001:001EB59A   167 0001:001EB5B6   172 0001:001EB5BC
+   173 0001:001EB5C8   174 0001:001EB5DC   175 0001:001EB5E2   177 0001:001EB5F4
+   178 0001:001EB61B   181 0001:001EB620   182 0001:001EB627   183 0001:001EB64B
+   185 0001:001EB655
 
 Line numbers for Demo(Demo.dpr) segment .itext
 
-    41 0002:00001590    42 0002:000015A0    43 0002:000015A8    44 0002:000015B4
-    45 0002:000015C2    46 0002:000015DA    47 0002:000015E6
+    11 0002:00001590    12 0002:000015A0    13 0002:000015A8    14 0002:000015B4
+    15 0002:000015C2    16 0002:000015DA    17 0002:000015E6
 
 Bound resource files
 

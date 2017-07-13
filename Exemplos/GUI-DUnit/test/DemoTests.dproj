@@ -65,7 +65,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\..\..\UnitTesting\FutureWindows.pas"/>
+        <DCCReference Include="..\src\FutureWindows.pas"/>
         <DCCReference Include="..\src\uModel.pas"/>
         <DCCReference Include="..\src\uMainForm.pas">
             <Form>MainForm</Form>
