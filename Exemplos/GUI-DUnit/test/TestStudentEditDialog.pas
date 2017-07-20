@@ -85,8 +85,8 @@ var
   futureWindow: IFutureWindow;
   dateOfBirth: TDate;
 const
-  NAME  = 'José Araújo';
-  EMAIL = 'jose@araujo.com';
+  NAME  = 'Leonardo Gregianin';
+  EMAIL = 'leogregianin@gmail.com';
 begin
   dateOfBirth := EncodeDate(1980, 1, 1);
 

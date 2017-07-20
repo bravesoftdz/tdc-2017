@@ -19,8 +19,8 @@ uses
 type
   TStudentEditDialogTestCase = class(TTestCaseBase)
   published
-    procedure TestEditCadastro;
-    procedure TestEditCadastroErro;
+    procedure TestEditCadastro1;
+    procedure TestEditCadastro2;
     procedure TestCloseForm;
   end;
 
@@ -79,7 +79,7 @@ begin
   CheckEquals(dateOfBirth, student.DateOfBirth, 0.1);
 end;
 
-procedure TStudentEditDialogTestCase.TestEditCadastroErro;
+procedure TStudentEditDialogTestCase.TestEditCadastro2;
 var
   student: IStudent;
   futureWindow: IFutureWindow;
@@ -101,8 +101,8 @@ begin
 
   Check(futureWindow.WindowFound, 'window not found: ' + futureWindow.Description);
 
-  CheckEquals(NAME, student.Email);
-  CheckEquals(EMAIL, student.Email);
+  CheckEquals(NAME, student.Email, 'Campo nome');
+  CheckEquals(EMAIL, student.Email, 'Campo email');
   CheckEquals(dateOfBirth, student.DateOfBirth, 0.1);
 end;
 

@@ -1,6 +1,6 @@
 
  Start         Length     Name                   Class
- 0001:00401000 0023EEF0H .text                   CODE
+ 0001:00401000 0023EF10H .text                   CODE
  0002:00640000 00001788H .itext                  ICODE
  0003:00642000 00005524H .data                   DATA
  0004:00648000 0000620CH .bss                    BSS
@@ -91,10 +91,10 @@ Detailed map of segments
  0001:00233A60 000008AC C=CODE     S=.text    G=(none)   M=uStudentEditDialog ACBP=A9
  0001:0023430C 00000E80 C=CODE     S=.text    G=(none)   M=uMainForm ACBP=A9
  0001:0023518C 0000038C C=CODE     S=.text    G=(none)   M=TestCaseBase ACBP=A9
- 0001:00235518 00000BC0 C=CODE     S=.text    G=(none)   M=TestStudentEditDialog ACBP=A9
- 0001:002360D8 00001F70 C=CODE     S=.text    G=(none)   M=TestMainForm ACBP=A9
- 0001:00238048 00000008 C=CODE     S=.text    G=(none)   M=TestFutureWindows ACBP=A9
- 0001:00238050 00006EA0 C=CODE     S=.text    G=(none)   M=DemoTests ACBP=A9
+ 0001:00235518 00000BE0 C=CODE     S=.text    G=(none)   M=TestStudentEditDialog ACBP=A9
+ 0001:002360F8 00001F70 C=CODE     S=.text    G=(none)   M=TestMainForm ACBP=A9
+ 0001:00238068 00000008 C=CODE     S=.text    G=(none)   M=TestFutureWindows ACBP=A9
+ 0001:00238070 00006EA0 C=CODE     S=.text    G=(none)   M=DemoTests ACBP=A9
  0002:00000000 000000E0 C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000E0 00000008 C=ICODE    S=.itext   G=(none)   M=SysInit  ACBP=A9
  0002:000000E8 00000018 C=ICODE    S=.itext   G=(none)   M=Winapi.Windows ACBP=A9
@@ -243,7 +243,7 @@ Detailed map of segments
   Address             Publics by Name
 
  0002:0000173C       DemoTests.DemoTests
- 0001:00238050       DemoTests.Finalization
+ 0001:00238070       DemoTests.Finalization
  0004:000061F8       FutureWindows..4
  0001:00230848       FutureWindows..TAbstractFutureWindow
  0001:00230188       FutureWindows..TAbstractWindowAction
@@ -8355,42 +8355,42 @@ Detailed map of segments
  0001:00221F44       TestFramework.TTestSuite.Tests
  0003:00004CCC       TestFramework.__TestRegistry
  0004:00006208       TestFutureWindows..1
- 0001:00238048       TestFutureWindows.Finalization
+ 0001:00238068       TestFutureWindows.Finalization
  0002:00001730       TestFutureWindows.TestFutureWindows
  0004:00006204       TestMainForm..1
- 0001:002360D8       TestMainForm..TMainFormTestCase
- 0001:00236970       TestMainForm..TMainFormTestCase.AddStudent_Fast$ActRec
- 0001:002365F0       TestMainForm..TMainFormTestCase.AddStudent_Slow$ActRec
- 0001:00237C38       TestMainForm..TMainFormTestCase.TestValidation_EmailEmpty$ActRec
- 0001:002376BC       TestMainForm..TMainFormTestCase.TestValidation_NameEmpty$ActRec
- 0001:00238040       TestMainForm.Finalization
+ 0001:002360F8       TestMainForm..TMainFormTestCase
+ 0001:00236990       TestMainForm..TMainFormTestCase.AddStudent_Fast$ActRec
+ 0001:00236610       TestMainForm..TMainFormTestCase.AddStudent_Slow$ActRec
+ 0001:00237C58       TestMainForm..TMainFormTestCase.TestValidation_EmailEmpty$ActRec
+ 0001:002376DC       TestMainForm..TMainFormTestCase.TestValidation_NameEmpty$ActRec
+ 0001:00238060       TestMainForm.Finalization
  0002:000016DC       TestMainForm.TestMainForm
- 0001:00236D7C       TestMainForm.TMainFormTestCase.AddStudents_Fast
- 0001:00236C34       TestMainForm.TMainFormTestCase.AddStudents_Slow
- 0001:00236B2C       TestMainForm.TMainFormTestCase.AddStudent_Fast
- 0001:00236AA4       TestMainForm.TMainFormTestCase.AddStudent_Fast$ActRec.$0$Body
- 0001:002367B4       TestMainForm.TMainFormTestCase.AddStudent_Slow
- 0001:00236724       TestMainForm.TMainFormTestCase.AddStudent_Slow$ActRec.$0$Body
- 0001:00236EC4       TestMainForm.TMainFormTestCase.ExecuteMainFormAction
- 0001:00236F70       TestMainForm.TMainFormTestCase.SetUp
- 0001:00236FCC       TestMainForm.TMainFormTestCase.TearDown
- 0001:0023706C       TestMainForm.TMainFormTestCase.TestAddManyStudents_Fast
- 0001:00236FF8       TestMainForm.TMainFormTestCase.TestAddManyStudents_Slow
- 0001:002370E0       TestMainForm.TMainFormTestCase.TestAddNewStudent
- 0001:00237204       TestMainForm.TMainFormTestCase.TestDeleteOneStudent
- 0001:0023739C       TestMainForm.TMainFormTestCase.TestDeleteStudents
- 0001:00237E90       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty
- 0001:00237D54       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$0$Body
- 0001:00237E28       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$1$Body
- 0001:00237914       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty
- 0001:002377D8       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$0$Body
- 0001:002378AC       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$1$Body
+ 0001:00236D9C       TestMainForm.TMainFormTestCase.AddStudents_Fast
+ 0001:00236C54       TestMainForm.TMainFormTestCase.AddStudents_Slow
+ 0001:00236B4C       TestMainForm.TMainFormTestCase.AddStudent_Fast
+ 0001:00236AC4       TestMainForm.TMainFormTestCase.AddStudent_Fast$ActRec.$0$Body
+ 0001:002367D4       TestMainForm.TMainFormTestCase.AddStudent_Slow
+ 0001:00236744       TestMainForm.TMainFormTestCase.AddStudent_Slow$ActRec.$0$Body
+ 0001:00236EE4       TestMainForm.TMainFormTestCase.ExecuteMainFormAction
+ 0001:00236F90       TestMainForm.TMainFormTestCase.SetUp
+ 0001:00236FEC       TestMainForm.TMainFormTestCase.TearDown
+ 0001:0023708C       TestMainForm.TMainFormTestCase.TestAddManyStudents_Fast
+ 0001:00237018       TestMainForm.TMainFormTestCase.TestAddManyStudents_Slow
+ 0001:00237100       TestMainForm.TMainFormTestCase.TestAddNewStudent
+ 0001:00237224       TestMainForm.TMainFormTestCase.TestDeleteOneStudent
+ 0001:002373BC       TestMainForm.TMainFormTestCase.TestDeleteStudents
+ 0001:00237EB0       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty
+ 0001:00237D74       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$0$Body
+ 0001:00237E48       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$1$Body
+ 0001:00237934       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty
+ 0001:002377F8       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$0$Body
+ 0001:002378CC       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$1$Body
  0004:00006200       TestStudentEditDialog..1
  0001:002357E8       TestStudentEditDialog..TEditStudentFutureWindowAction
  0001:00235518       TestStudentEditDialog..TStudentEditDialogTestCase
- 0001:002360D0       TestStudentEditDialog.Finalization
- 0001:00235EC4       TestStudentEditDialog.TEditStudentFutureWindowAction.Create
- 0001:00235F2C       TestStudentEditDialog.TEditStudentFutureWindowAction.Execute
+ 0001:002360F0       TestStudentEditDialog.Finalization
+ 0001:00235EE4       TestStudentEditDialog.TEditStudentFutureWindowAction.Create
+ 0001:00235F4C       TestStudentEditDialog.TEditStudentFutureWindowAction.Execute
  0002:00001688       TestStudentEditDialog.TestStudentEditDialog
  0001:00235968       TestStudentEditDialog.TStudentEditDialogTestCase.TestCloseForm
  0001:00235A38       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro1
@@ -30504,37 +30504,37 @@ Detailed map of segments
  0001:00235968       TestStudentEditDialog.TStudentEditDialogTestCase.TestCloseForm
  0001:00235A38       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro1
  0001:00235C5C       TestStudentEditDialog.TStudentEditDialogTestCase.TestEditCadastro2
- 0001:00235EC4       TestStudentEditDialog.TEditStudentFutureWindowAction.Create
- 0001:00235F2C       TestStudentEditDialog.TEditStudentFutureWindowAction.Execute
- 0001:002360D0       TestStudentEditDialog.Finalization
- 0001:002360D8       TestMainForm..TMainFormTestCase
- 0001:002365F0       TestMainForm..TMainFormTestCase.AddStudent_Slow$ActRec
- 0001:00236724       TestMainForm.TMainFormTestCase.AddStudent_Slow$ActRec.$0$Body
- 0001:002367B4       TestMainForm.TMainFormTestCase.AddStudent_Slow
- 0001:00236970       TestMainForm..TMainFormTestCase.AddStudent_Fast$ActRec
- 0001:00236AA4       TestMainForm.TMainFormTestCase.AddStudent_Fast$ActRec.$0$Body
- 0001:00236B2C       TestMainForm.TMainFormTestCase.AddStudent_Fast
- 0001:00236C34       TestMainForm.TMainFormTestCase.AddStudents_Slow
- 0001:00236D7C       TestMainForm.TMainFormTestCase.AddStudents_Fast
- 0001:00236EC4       TestMainForm.TMainFormTestCase.ExecuteMainFormAction
- 0001:00236F70       TestMainForm.TMainFormTestCase.SetUp
- 0001:00236FCC       TestMainForm.TMainFormTestCase.TearDown
- 0001:00236FF8       TestMainForm.TMainFormTestCase.TestAddManyStudents_Slow
- 0001:0023706C       TestMainForm.TMainFormTestCase.TestAddManyStudents_Fast
- 0001:002370E0       TestMainForm.TMainFormTestCase.TestAddNewStudent
- 0001:00237204       TestMainForm.TMainFormTestCase.TestDeleteOneStudent
- 0001:0023739C       TestMainForm.TMainFormTestCase.TestDeleteStudents
- 0001:002376BC       TestMainForm..TMainFormTestCase.TestValidation_NameEmpty$ActRec
- 0001:002377D8       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$0$Body
- 0001:002378AC       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$1$Body
- 0001:00237914       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty
- 0001:00237C38       TestMainForm..TMainFormTestCase.TestValidation_EmailEmpty$ActRec
- 0001:00237D54       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$0$Body
- 0001:00237E28       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$1$Body
- 0001:00237E90       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty
- 0001:00238040       TestMainForm.Finalization
- 0001:00238048       TestFutureWindows.Finalization
- 0001:00238050       DemoTests.Finalization
+ 0001:00235EE4       TestStudentEditDialog.TEditStudentFutureWindowAction.Create
+ 0001:00235F4C       TestStudentEditDialog.TEditStudentFutureWindowAction.Execute
+ 0001:002360F0       TestStudentEditDialog.Finalization
+ 0001:002360F8       TestMainForm..TMainFormTestCase
+ 0001:00236610       TestMainForm..TMainFormTestCase.AddStudent_Slow$ActRec
+ 0001:00236744       TestMainForm.TMainFormTestCase.AddStudent_Slow$ActRec.$0$Body
+ 0001:002367D4       TestMainForm.TMainFormTestCase.AddStudent_Slow
+ 0001:00236990       TestMainForm..TMainFormTestCase.AddStudent_Fast$ActRec
+ 0001:00236AC4       TestMainForm.TMainFormTestCase.AddStudent_Fast$ActRec.$0$Body
+ 0001:00236B4C       TestMainForm.TMainFormTestCase.AddStudent_Fast
+ 0001:00236C54       TestMainForm.TMainFormTestCase.AddStudents_Slow
+ 0001:00236D9C       TestMainForm.TMainFormTestCase.AddStudents_Fast
+ 0001:00236EE4       TestMainForm.TMainFormTestCase.ExecuteMainFormAction
+ 0001:00236F90       TestMainForm.TMainFormTestCase.SetUp
+ 0001:00236FEC       TestMainForm.TMainFormTestCase.TearDown
+ 0001:00237018       TestMainForm.TMainFormTestCase.TestAddManyStudents_Slow
+ 0001:0023708C       TestMainForm.TMainFormTestCase.TestAddManyStudents_Fast
+ 0001:00237100       TestMainForm.TMainFormTestCase.TestAddNewStudent
+ 0001:00237224       TestMainForm.TMainFormTestCase.TestDeleteOneStudent
+ 0001:002373BC       TestMainForm.TMainFormTestCase.TestDeleteStudents
+ 0001:002376DC       TestMainForm..TMainFormTestCase.TestValidation_NameEmpty$ActRec
+ 0001:002377F8       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$0$Body
+ 0001:002378CC       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty$ActRec.$1$Body
+ 0001:00237934       TestMainForm.TMainFormTestCase.TestValidation_NameEmpty
+ 0001:00237C58       TestMainForm..TMainFormTestCase.TestValidation_EmailEmpty$ActRec
+ 0001:00237D74       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$0$Body
+ 0001:00237E48       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty$ActRec.$1$Body
+ 0001:00237EB0       TestMainForm.TMainFormTestCase.TestValidation_EmailEmpty
+ 0001:00238060       TestMainForm.Finalization
+ 0001:00238068       TestFutureWindows.Finalization
+ 0001:00238070       DemoTests.Finalization
  0002:00000000       System.System
  0002:000000E0       SysInit.SysInit
  0002:000000E8       Winapi.Windows.Winapi.Windows
@@ -31755,11 +31755,11 @@ Line numbers for TestStudentEditDialog(TestStudentEditDialog.pas) segment .text
     77 0001:00235B1A    78 0001:00235B37    79 0001:00235B54    80 0001:00235B86
     90 0001:00235C5C    91 0001:00235C7D    93 0001:00235C92    95 0001:00235C9F
     96 0001:00235CC3   100 0001:00235CF3   102 0001:00235D0C   104 0001:00235D3E
-   105 0001:00235D5E   106 0001:00235D7E   107 0001:00235DB0   111 0001:00235EC4
-   112 0001:00235EDF   113 0001:00235EED   114 0001:00235EFB   115 0001:00235F0A
-   120 0001:00235F2C   121 0001:00235F39   122 0001:00235F64   124 0001:00235F7A
-   125 0001:00235F8E   126 0001:00235FA2   129 0001:00235FB9   131 0001:00235FC7
-   132 0001:00235FD9
+   105 0001:00235D5E   106 0001:00235D7E   107 0001:00235DB0   111 0001:00235EE4
+   112 0001:00235EFF   113 0001:00235F0D   114 0001:00235F1B   115 0001:00235F2A
+   120 0001:00235F4C   121 0001:00235F59   122 0001:00235F84   124 0001:00235F9A
+   125 0001:00235FAE   126 0001:00235FC2   129 0001:00235FD9   131 0001:00235FE7
+   132 0001:00235FF9
 
 Line numbers for TestStudentEditDialog(TestStudentEditDialog.pas) segment .itext
 
@@ -31767,43 +31767,43 @@ Line numbers for TestStudentEditDialog(TestStudentEditDialog.pas) segment .itext
 
 Line numbers for TestMainForm(TestMainForm.pas) segment .text
 
-    51 0001:00236724    54 0001:00236731    55 0001:00236747    56 0001:0023675B
-    57 0001:0023676F    59 0001:00236786    61 0001:0023679A    63 0001:002367AC
-    47 0001:002367B4    63 0001:0023682C    65 0001:00236865    66 0001:0023687C
-    74 0001:00236AA4    77 0001:00236AB1    78 0001:00236AC7    79 0001:00236ADB
-    80 0001:00236AEF    82 0001:00236B06    84 0001:00236B14    86 0001:00236B26
-    70 0001:00236B2C    86 0001:00236BA4    88 0001:00236BDD    89 0001:00236BF4
-    94 0001:00236C34    95 0001:00236C58    97 0001:00236C6D   102 0001:00236CE5
-    95 0001:00236CE8   103 0001:00236CED   108 0001:00236D7C   109 0001:00236DA0
-   111 0001:00236DB5   116 0001:00236E2D   109 0001:00236E30   117 0001:00236E35
-   120 0001:00236EC4   121 0001:00236EE5   122 0001:00236EF3   123 0001:00236EFB
-   124 0001:00236F1F   125 0001:00236F2B   131 0001:00236F70   132 0001:00236F77
-   133 0001:00236F7F   134 0001:00236F9C   135 0001:00236FAA   136 0001:00236FB8
-   137 0001:00236FC9   140 0001:00236FCC   141 0001:00236FD3   142 0001:00236FE1
-   143 0001:00236FEC   144 0001:00236FF4   149 0001:00236FF8   150 0001:00237000
-   152 0001:00237022   154 0001:0023702F   156 0001:00237054   158 0001:00237065
-   163 0001:0023706C   164 0001:00237074   166 0001:00237096   168 0001:002370A3
-   170 0001:002370C8   171 0001:002370D9   179 0001:002370E0   180 0001:002370EA
-   181 0001:00237106   183 0001:00237122   185 0001:00237137   187 0001:00237159
-   189 0001:00237171   191 0001:00237196   192 0001:002371A7   200 0001:00237204
-   201 0001:00237221   202 0001:0023722E   204 0001:00237253   207 0001:0023725D
-   209 0001:00237276   210 0001:00237287   212 0001:002372AB   215 0001:002372E4
-   217 0001:002372FB   205 0001:002372FE   220 0001:0023731A   222 0001:0023732C
-   224 0001:0023733D   232 0001:0023739C   233 0001:002373B9   234 0001:002373C6
-   236 0001:002373EB   239 0001:002373F5   241 0001:0023740E   242 0001:0023741F
-   245 0001:00237443   248 0001:0023747C   250 0001:00237493   251 0001:00237496
-   237 0001:002374AA   254 0001:002374C6   256 0001:002374D8   257 0001:002374E9
-   270 0001:002377D8   273 0001:002377F9   275 0001:00237810   278 0001:0023781B
-   280 0001:0023782C   283 0001:00237845   285 0001:0023785A   290 0001:002378AC
-   291 0001:002378B9   292 0001:002378D2   295 0001:002378E5   298 0001:002378F9
-   300 0001:0023790E   263 0001:00237914   264 0001:0023795D   267 0001:00237965
-   287 0001:00237993   302 0001:002379CC   303 0001:002379E9   304 0001:00237A03
-   305 0001:00237A17   318 0001:00237D54   321 0001:00237D75   323 0001:00237D8C
-   326 0001:00237D97   328 0001:00237DA8   331 0001:00237DC1   333 0001:00237DD6
-   338 0001:00237E28   339 0001:00237E35   340 0001:00237E4E   343 0001:00237E61
-   346 0001:00237E75   348 0001:00237E8A   311 0001:00237E90   312 0001:00237ED9
-   315 0001:00237EE1   335 0001:00237F0F   350 0001:00237F48   351 0001:00237F65
-   352 0001:00237F7F   353 0001:00237F93
+    51 0001:00236744    54 0001:00236751    55 0001:00236767    56 0001:0023677B
+    57 0001:0023678F    59 0001:002367A6    61 0001:002367BA    63 0001:002367CC
+    47 0001:002367D4    63 0001:0023684C    65 0001:00236885    66 0001:0023689C
+    74 0001:00236AC4    77 0001:00236AD1    78 0001:00236AE7    79 0001:00236AFB
+    80 0001:00236B0F    82 0001:00236B26    84 0001:00236B34    86 0001:00236B46
+    70 0001:00236B4C    86 0001:00236BC4    88 0001:00236BFD    89 0001:00236C14
+    94 0001:00236C54    95 0001:00236C78    97 0001:00236C8D   102 0001:00236D05
+    95 0001:00236D08   103 0001:00236D0D   108 0001:00236D9C   109 0001:00236DC0
+   111 0001:00236DD5   116 0001:00236E4D   109 0001:00236E50   117 0001:00236E55
+   120 0001:00236EE4   121 0001:00236F05   122 0001:00236F13   123 0001:00236F1B
+   124 0001:00236F3F   125 0001:00236F4B   131 0001:00236F90   132 0001:00236F97
+   133 0001:00236F9F   134 0001:00236FBC   135 0001:00236FCA   136 0001:00236FD8
+   137 0001:00236FE9   140 0001:00236FEC   141 0001:00236FF3   142 0001:00237001
+   143 0001:0023700C   144 0001:00237014   149 0001:00237018   150 0001:00237020
+   152 0001:00237042   154 0001:0023704F   156 0001:00237074   158 0001:00237085
+   163 0001:0023708C   164 0001:00237094   166 0001:002370B6   168 0001:002370C3
+   170 0001:002370E8   171 0001:002370F9   179 0001:00237100   180 0001:0023710A
+   181 0001:00237126   183 0001:00237142   185 0001:00237157   187 0001:00237179
+   189 0001:00237191   191 0001:002371B6   192 0001:002371C7   200 0001:00237224
+   201 0001:00237241   202 0001:0023724E   204 0001:00237273   207 0001:0023727D
+   209 0001:00237296   210 0001:002372A7   212 0001:002372CB   215 0001:00237304
+   217 0001:0023731B   205 0001:0023731E   220 0001:0023733A   222 0001:0023734C
+   224 0001:0023735D   232 0001:002373BC   233 0001:002373D9   234 0001:002373E6
+   236 0001:0023740B   239 0001:00237415   241 0001:0023742E   242 0001:0023743F
+   245 0001:00237463   248 0001:0023749C   250 0001:002374B3   251 0001:002374B6
+   237 0001:002374CA   254 0001:002374E6   256 0001:002374F8   257 0001:00237509
+   270 0001:002377F8   273 0001:00237819   275 0001:00237830   278 0001:0023783B
+   280 0001:0023784C   283 0001:00237865   285 0001:0023787A   290 0001:002378CC
+   291 0001:002378D9   292 0001:002378F2   295 0001:00237905   298 0001:00237919
+   300 0001:0023792E   263 0001:00237934   264 0001:0023797D   267 0001:00237985
+   287 0001:002379B3   302 0001:002379EC   303 0001:00237A09   304 0001:00237A23
+   305 0001:00237A37   318 0001:00237D74   321 0001:00237D95   323 0001:00237DAC
+   326 0001:00237DB7   328 0001:00237DC8   331 0001:00237DE1   333 0001:00237DF6
+   338 0001:00237E48   339 0001:00237E55   340 0001:00237E6E   343 0001:00237E81
+   346 0001:00237E95   348 0001:00237EAA   311 0001:00237EB0   312 0001:00237EF9
+   315 0001:00237F01   335 0001:00237F2F   350 0001:00237F68   351 0001:00237F85
+   352 0001:00237F9F   353 0001:00237FB3
 
 Line numbers for TestMainForm(TestMainForm.pas) segment .itext
 
