@@ -1,0 +1,9 @@
+[submodule "Componentes/DUnitX"]
+	path = Componentes/DUnitX
+	url = https://github.com/VSoftTechnologies/DUnitX.git
+[submodule "Componentes/Delphi-Mocks"]
+	path = Componentes/Delphi-Mocks
+	url = https://github.com/VSoftTechnologies/Delphi-Mocks.git
+[submodule "Componentes/DUnit"]
+	path = Componentes/DUnit
+	url = https://github.com/Pawe1/DUnit.git
