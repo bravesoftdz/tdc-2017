@@ -7,3 +7,6 @@
 [submodule "Componentes/DUnit"]
 	path = Componentes/DUnit
 	url = https://github.com/Pawe1/DUnit.git
+[submodule "Componentes/DelphiSpec"]
+	path = Componentes/DelphiSpec
+	url = https://github.com/RomanYankovsky/DelphiSpec.git
