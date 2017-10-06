@@ -10,3 +10,9 @@
 [submodule "Componentes/DelphiSpec"]
 	path = Componentes/DelphiSpec
 	url = https://github.com/RomanYankovsky/DelphiSpec.git
+[submodule "Componentes/delphi-code-coverage"]
+	path = Componentes/delphi-code-coverage
+	url = https://github.com/magicmonty/delphi-code-coverage.git
+[submodule "Componentes/DelphiCodeCoverageExample"]
+	path = Componentes/DelphiCodeCoverageExample
+	url = https://github.com/VSoftTechnologies/DelphiCodeCoverageExample.git
