@@ -66,3 +66,4 @@ __recovery/
 *.stat
 *.ppu
 *.compiled
+/Exemplos/Calculadora-Dunit/src/*.dcu

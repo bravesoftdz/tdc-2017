@@ -16,3 +16,6 @@
 [submodule "Componentes/DelphiCodeCoverageExample"]
 	path = Componentes/DelphiCodeCoverageExample
 	url = https://github.com/VSoftTechnologies/DelphiCodeCoverageExample.git
+[submodule "Exemplos/delphi-exercism"]
+	path = Exemplos/delphi-exercism
+	url = https://github.com/exercism/delphi.git
